@@ -1,0 +1,43 @@
+.title {
+  margin: 0;
+  font-weight: 700;
+
+  @include viewport--md {
+    // text-align: center;
+    text-transform: uppercase;
+  }
+
+  &--h1 {
+    font-size: 36px;
+    line-height: 1.19;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+
+    @include viewport--md {
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.31;
+      letter-spacing: 0.65px;
+    }
+  }
+
+  &--h2 {
+    font-size: 36px;
+    line-height: 1.19;
+    letter-spacing: 0.9px;
+
+    @include viewport--md {
+      font-size: 26px;
+      line-height: 1.31;
+      letter-spacing: 0.65px;
+    }
+  }
+
+  &--h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+}

@@ -1,0 +1,70 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: calc(100 * var(--vh, 1vh));
+    overflow-x: hidden;
+
+    &--no-scrollbar {
+        height: 100vh;
+        height: calc(100 * var(--vh, 1vh));
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .footer,
+    .header {
+        flex-shrink: 0;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+}
+
+.scroll-lock {
+    position: fixed;
+    overflow-y: auto;
+}
+
+.btn-reset {
+    padding: 0;
+    background: $color-transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.lines {
+    background: url("../img/svg/bg-services-line.svg") no-repeat 0 555px, url("../img/svg/bg-services-line-2.svg") no-repeat 0 560px, url("../img/svg/line_5.svg") no-repeat 0 2890px, url("../img/svg/line_6.svg") no-repeat 0 2895px;
+    background-size: 100% auto;
+}
+@keyframes disableBreakpointAnimation {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.overflow-hidden {
+    @include viewport--md {
+        overflow: hidden;
+    }
+}

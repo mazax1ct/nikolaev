@@ -1,0 +1,164 @@
+.form-feedback {
+  &--hide {
+    display: none;
+  }
+}
+
+.form-feedback__wrapper-review {
+  display: flex;
+  margin-bottom: 20px;
+
+  @include viewport--lg {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  input {
+    padding-bottom: 27px;
+  }
+}
+
+.form-feedback__input-wrapper {
+  position: relative;
+
+  // @include viewport--md {
+  //   width: 100%;
+  // }
+
+  &--name {
+    width: 48%;
+
+    @include viewport--md {
+      width: 100%;
+    }
+  }
+
+  &--name-review {
+    @include viewport--lg {
+      width: 100%;
+    }
+  }
+
+  &--tel {
+    width: 50%;
+    margin-left: auto;
+
+    @include viewport--md {
+      width: 100%;
+    }
+  }
+
+  &--email {
+    width: 50%;
+    margin-left: auto;
+
+    @include viewport--lg {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &--email-review {
+    width: 48%;
+
+    @include viewport--lg {
+      width: 100%;
+    }
+  }
+
+  &--comment {
+    margin-bottom: 16px;
+
+    @include viewport--md {
+      margin-bottom: 0;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 26px;
+    left: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    color: $color-dim-gray;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.form-feedback__input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 33px 20px 19px 20px;
+  background-color: $color-ghost-white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($color-raven, 0.1);
+  }
+
+  &--white {
+    background-color: $color-default-white;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($color-default-black, 0.1);
+    }
+  }
+
+  &--comment {
+    height: 345px;
+
+    @include viewport--md {
+      height: 300px;
+    }
+  }
+
+  &--active {
+    & + label {
+      top: 10px;
+      font-size: 12px;
+      letter-spacing: 0.3px;
+      // transform: top 1s ease;
+      // transform: scale(0.7) translateY(-15px) translateX(-5px) translateZ(0);
+    }
+  }
+}
+
+.form-feedback__btn {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+
+  @include viewport--md {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.form-feedback input {
+  &.invalid {
+    background-color: $color-grey-nurse;
+    color: $color-quartz;
+  }
+}
+
+.form-feedback__massage {
+  &--hide {
+    display: none;
+  }
+}
+
+.form-feedback__massage-thanks {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.45px;
+  font-weight: 600;
+  text-align: center;
+  color: $color-neon-blue;
+}

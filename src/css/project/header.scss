@@ -1,0 +1,183 @@
+.header {
+    background-color: rgba($color-default-white, 0.9);
+    @include viewport--md {
+        position: relative;
+    }
+
+    &--scroll {
+        @include viewport--md {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    }
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    @include viewport--md {
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 21px;
+        padding-bottom: 17px;
+    }
+}
+
+.header__logo {
+    width: 90px;
+    @media(min-width: $viewport--xl) {
+        width: 140px;
+    }
+
+    img {
+        @include viewport--lg {
+            max-width: 100%;
+            height: 32px;
+            object-fit: contain;
+        }
+    }
+}
+
+.header__wrapper-second {
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include viewport--lg {
+        max-width: 100%;
+    }
+    @include viewport--md {
+        position: static;
+        display: block;
+        width: auto;
+    }
+}
+
+.header__btn-menu {
+    display: none;
+    @include viewport--md {
+        position: relative;
+        z-index: 200;
+        display: block;
+        width: 26px;
+        height: 26px;
+        background: url("../img/svg/menu-open.svg") no-repeat;
+        outline: none;
+
+        &--close {
+            background: url("../img/sprite/icon-close.svg") 100% no-repeat;
+        }
+    }
+}
+
+.header__menu-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    @include viewport--md {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        margin-right: 0;
+        padding: 22px 50px 78px 30px;
+        background-color: $color-default-white;
+        border-top: 1px solid $color-solitude;
+        z-index: 100;
+        // overflow-y: auto;
+        &--show {
+            display: block;
+        }
+    }
+    @include viewport--md {
+        &--show {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 28px;
+        }
+    }
+    @include viewport--sm {
+        &--show {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+.header__search {
+    display: none;
+    @include viewport--md {
+        display: block;
+    }
+}
+
+.header__btn-wrapper {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    @include viewport--md {
+        order: 2;
+        margin: 0 0 40px;
+    }
+    @media(min-width: 1280px) {
+        margin-left: 30px;
+    }
+    @media(min-width: $viewport--xxl) {
+        margin-left: 54px;
+    }
+
+    .btn--whatsapp_solid {
+        background-color: #25d366;
+        color: #fff;
+        font-size: 12px;
+        margin-left: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-transform: none;
+        @media(min-width: $viewport--xl) {
+            font-size: 14px;
+            padding-left: 31px;
+            padding-right: 31px;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: rgba(37,211,102,.3);
+        }
+    }
+
+    .contacts__link {
+        display: none;
+        @media(min-width: 1280px) {
+            align-items: center;
+            display: flex;
+        }
+
+        .contacts__icon {
+            margin-right: 12px;
+            position: static;
+        }
+    }
+}
+
+.header__btn-order {
+    @include viewport--md {
+        display: block;
+        width: 100%;
+    }
+}
+
+.header__contacts {
+    display: none;
+    @include viewport--md {
+        display: block;
+    }
+}

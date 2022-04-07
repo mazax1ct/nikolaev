@@ -1,0 +1,56 @@
+.stepper {
+  display: flex;
+
+  @include viewport--md {
+    justify-content: center;
+  }
+
+  input,
+  button {
+    // width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+.stepper__btn {
+  position: relative;
+  width: 70px;
+  // height: 70px;
+  padding: 27px;
+  background-color: $color-default-white;
+  border: solid 1px $color-solitude;
+  cursor: pointer;
+
+  &--minus {
+    background: url("../img/svg/minus.svg") 50% no-repeat;
+  }
+
+  &--plus {
+    background: url("../img/svg/plus.svg") 50% no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px 3px rgba(18, 40, 116, 0.3);
+  }
+
+  &:active {
+    box-shadow: 0 0 10px 0 rgba(18, 40, 116, 0.1);
+  }
+}
+
+.stepper__input {
+  width: 100px;
+  margin: 0 15px;
+  padding: 10px;
+  font-size: 24px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: $color-default-black;
+  background-color: $color-ghost-white;
+  border: none;
+}

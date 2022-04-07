@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="img/favicon.ico" rel="shortcut icon">
+
+    <link rel="preload" href="fonts/tttravels-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/tttravels-medium.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/tttravels-demibold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/tttravels-demibold.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/tttravels-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/tttravels-bold.woff" as="font" type="font/woff" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-phone" viewBox="0 0 16 16">
+            <path
+              d="M14.737 10.535a9.147 9.147 0 0 1-2.87-.456 1.23 1.23 0 0 0-1.249.264L8.8 11.715A10.146 10.146 0 0 1 4.286 7.2l1.335-1.773a1.275 1.275 0 0 0 .312-1.288 9.144 9.144 0 0 1-.46-2.875A1.265 1.265 0 0 0 4.211 0H1.263A1.265 1.265 0 0 0 0 1.263 14.754 14.754 0 0 0 14.737 16 1.265 1.265 0 0 0 16 14.737V11.8a1.265 1.265 0 0 0-1.263-1.265z" />
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 16 16">
+            <g>
+                <path d="M0,0h16v16H0V0z" />
+                <path fill="#fff" d="M8.1,13.1H8c-0.8,0-1.5,0-2.3-0.1c-0.6,0-1.2-0.3-1.7-0.7c-0.5-0.4-0.8-0.9-0.9-1.5C3,10.3,2.9,9.8,2.9,9.3
+          		c0-0.4,0-0.8,0-1.3c0-0.4,0-0.9,0-1.3c0-0.5,0-1.1,0.2-1.6C3.2,4.5,3.5,4,4,3.6C4.5,3.2,5.1,3,5.7,3c0.7,0,1.5-0.1,2.3-0.1
+          		c0.8,0,1.5,0,2.3,0.1c0.6,0,1.2,0.3,1.7,0.7c0.5,0.4,0.8,0.9,0.9,1.5c0.1,0.5,0.2,1.1,0.2,1.6c0,0.4,0,0.8,0,1.3c0,0.4,0,0.9,0,1.3
+          		c0,0.5,0,1.1-0.2,1.6c-0.1,0.6-0.5,1.1-0.9,1.5c-0.5,0.4-1.1,0.6-1.7,0.7C9.6,13.1,8.9,13.1,8.1,13.1z M8,12.3c0.8,0,1.5,0,2.2-0.1
+          		c0.5,0,0.9-0.2,1.3-0.5c0.3-0.3,0.6-0.7,0.7-1.1c0.1-0.5,0.1-0.9,0.1-1.4c0-0.4,0-0.8,0-1.3s0-0.9,0-1.3c0-0.5,0-0.9-0.1-1.4
+          		c-0.1-0.4-0.3-0.8-0.7-1.1c-0.4-0.3-0.8-0.5-1.3-0.5C9.5,3.7,8.8,3.7,8,3.7c-0.8,0-1.5,0-2.2,0.1C5.3,3.8,4.9,4,4.5,4.2
+          		C4.2,4.5,3.9,4.9,3.8,5.3C3.7,5.8,3.7,6.3,3.7,6.8c0,0.4,0,0.8,0,1.3c0,0.4,0,0.9,0,1.2c0,0.5,0,0.9,0.1,1.4
+          		c0.1,0.4,0.3,0.8,0.7,1.1c0.4,0.3,0.8,0.5,1.3,0.5C6.5,12.3,7.2,12.3,8,12.3L8,12.3z M8,10.5c-1.4,0-2.5-1.1-2.5-2.5S6.6,5.5,8,5.5
+          		s2.5,1.1,2.5,2.5c0,0,0,0,0,0C10.5,9.4,9.4,10.5,8,10.5L8,10.5z M8,6.3C7,6.3,6.3,7.1,6.3,8S7,9.7,8,9.7S9.7,8.9,9.7,8
+          		C9.7,7.1,8.9,6.3,8,6.3L8,6.3z M10.7,4.7c-0.3,0-0.6,0.3-0.6,0.6c0,0.3,0.3,0.6,0.6,0.6c0.3,0,0.6-0.3,0.6-0.6S11.1,4.7,10.7,4.7z" />
+                <path fill="#fff" d="M8.1,13.2H8c-0.9,0-1.6,0-2.3-0.1c-0.7,0-1.3-0.3-1.8-0.7c-0.5-0.4-0.8-1-1-1.6c-0.1-0.5-0.2-1.1-0.2-1.6
+          		c0-0.4,0-0.8,0-1.3c0-0.4,0-0.9,0-1.3c0-0.5,0-1.1,0.2-1.6c0.1-0.6,0.5-1.2,1-1.6c0.5-0.4,1.2-0.7,1.8-0.7c0.7,0,1.4-0.1,2.3-0.1
+          		c0.8,0,1.6,0,2.3,0.1c0.7,0,1.3,0.3,1.8,0.7c0.5,0.4,0.8,1,1,1.6c0.1,0.5,0.2,1.1,0.2,1.6c0,0.4,0,0.8,0,1.3c0,0.4,0,0.9,0,1.2
+          		c0,0.6,0,1.1-0.2,1.6c-0.1,0.6-0.5,1.2-1,1.6c-0.5,0.4-1.2,0.7-1.8,0.7C9.6,13.2,8.9,13.2,8.1,13.2z M8,3.1c-0.8,0-1.5,0-2.2,0.1
+          		c-0.6,0-1.2,0.2-1.7,0.6C3.7,4.1,3.4,4.6,3.2,5.2c-0.1,0.5-0.2,1-0.2,1.6c0,0.4,0,0.8,0,1.3c0,0.4,0,0.9,0,1.2c0,0.5,0,1.1,0.2,1.6
+          		c0.1,0.6,0.4,1.1,0.9,1.4c0.5,0.4,1,0.6,1.6,0.6c0.7,0,1.4,0.1,2.2,0.1h0.1c0.8,0,1.5,0,2.1-0.1c0.6,0,1.2-0.2,1.7-0.6
+          		c0.4-0.4,0.8-0.9,0.9-1.4c0.1-0.5,0.2-1,0.2-1.6c0-0.4,0-0.8,0-1.3c0-0.4,0-0.9,0-1.3c0-0.5,0-1.1-0.2-1.6
+          		c-0.1-0.6-0.4-1.1-0.9-1.4c-0.5-0.4-1-0.6-1.6-0.6C9.5,3.1,8.8,3.1,8,3.1z M7.9,12.4c-0.7,0-1.4,0-2.1-0.1c-0.5,0-1-0.2-1.4-0.5
+          		c-0.4-0.3-0.6-0.7-0.7-1.2c-0.1-0.5-0.1-1-0.1-1.5c0-0.4,0-0.8,0-1.2s0-0.9,0-1.3c0-0.5,0-1,0.1-1.4c0.1-0.5,0.4-0.9,0.7-1.2
+          		c0.4-0.3,0.9-0.5,1.4-0.5c0.6,0,1.4-0.1,2.2-0.1c0.9,0,1.6,0,2.2,0.1c0.5,0,1,0.2,1.4,0.5c0.4,0.3,0.6,0.7,0.7,1.2
+          		c0.1,0.5,0.1,1,0.1,1.5l0,0.1c0,0.3,0,0.7,0,1.1c0,0.4,0,0.9,0,1.3c0,0.5,0,1-0.1,1.4c-0.1,0.5-0.4,0.9-0.7,1.2
+          		c-0.4,0.3-0.9,0.5-1.4,0.5c-0.6,0-1.3,0.1-2.1,0.1l0,0l-0.1,0C8,12.4,7.9,12.4,7.9,12.4z M8,3.9c-0.9,0-1.6,0-2.2,0.1
+          		c-0.4,0-0.9,0.2-1.2,0.4C4.3,4.6,4.1,5,4,5.4C3.9,5.8,3.9,6.3,3.9,6.7c0,0.4,0,0.8,0,1.3s0,0.9,0,1.2c0,0.5,0,0.9,0.1,1.4
+          		c0.1,0.4,0.3,0.7,0.6,1c0.3,0.3,0.8,0.4,1.2,0.4c0.7,0,1.3,0.1,2.1,0.1v0l0.1,0c0.8,0,1.5,0,2.2-0.1c0.4,0,0.9-0.2,1.2-0.4
+          		c0.3-0.3,0.5-0.6,0.6-1c0.1-0.4,0.1-0.9,0.1-1.4c0-0.4,0-0.8,0-1.3c0-0.4,0-0.8,0-1.1l0-0.1c0-0.5,0-0.9-0.1-1.4
+          		c-0.1-0.4-0.3-0.7-0.6-1c-0.3-0.3-0.8-0.4-1.2-0.4C9.6,3.9,8.9,3.9,8,3.9z M7.8,10.6L7.8,10.6C6.4,10.5,5.3,9.4,5.3,8
+          		c0-1.5,1.2-2.6,2.6-2.6c0,0,0,0,0,0c0.7,0,1.4,0.3,1.9,0.8c0.5,0.5,0.8,1.2,0.8,1.9c0,1.5-1.2,2.6-2.6,2.6H7.8z M8,5.7
+          		C8,5.7,8,5.7,8,5.7c-1.3,0-2.3,1-2.3,2.3s1,2.3,2.3,2.3h0.1c1.2-0.1,2.2-1.1,2.2-2.3c0-0.6-0.2-1.2-0.7-1.7C9.2,5.9,8.6,5.7,8,5.7z
+          		 M8,9.8C7,9.8,6.1,9,6.1,8S7,6.2,8,6.2h0.2l0,0C9.1,6.3,9.8,7.1,9.8,8C9.8,9,9,9.8,8,9.8z M7.9,6.5C7.1,6.5,6.4,7.2,6.4,8
+          		c0,0.8,0.7,1.5,1.5,1.5S9.5,8.8,9.5,8C9.5,7.1,8.8,6.5,7.9,6.5L7.9,6.5z M10.7,6.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.7,0.8-0.7
+          		c0.4,0,0.8,0.3,0.8,0.7S11.2,6.1,10.7,6.1z M10.7,4.9c-0.2,0-0.5,0.2-0.5,0.4s0.2,0.5,0.5,0.5s0.4-0.2,0.4-0.5S11,4.9,10.7,4.9z" />
+            </g>
+        </symbol>
+        <symbol id="icon-email" viewBox="0 0 16 16">
+            <g>
+                <path d="M39.511 61H26.323a1.39 1.39 0 0 0-.6.141l7.165 7.165 1.606-1.543 5.621-5.621a1.39 1.39 0 0 0-.604-.142z" transform="translate(0 -59.1) translate(-24.917)" />
+                <path d="M343.5 86.728l-5.29 5.29 5.29 5.29a1.39 1.39 0 0 0 .141-.6V87.33a1.39 1.39 0 0 0-.141-.602z" transform="translate(0 -59.1) translate(-327.644 -24.925)" />
+                <path d="M.141 86.721a1.39 1.39 0 0 0-.141.6V96.7a1.39 1.39 0 0 0 .141.6l5.29-5.29z" transform="translate(0 -59.1) translate(0 -24.918)" />
+                <path d="M34.817 277.211l-1.606 1.544a.469.469 0 0 1-.663 0L31 277.211l-5.29 5.29a1.39 1.39 0 0 0 .6.141H39.5a1.39 1.39 0 0 0 .6-.141z" transform="translate(0 -59.1) translate(-24.91 -209.455)" />
+            </g>
+        </symbol>
+        <symbol id="icon-pin" viewBox="0 0 16 16">
+            <path d="M76.368 0a5.8 5.8 0 0 0-5.795 5.795c0 3.965 5.186 9.786 5.406 10.032a.522.522 0 0 0 .776 0c.221-.246 5.406-6.067 5.406-10.032A5.8 5.8 0 0 0 76.368 0zm0 8.71a2.915 2.915 0 1 1 2.915-2.915 2.919 2.919 0 0 1-2.915 2.915z"
+              transform="translate(-68.373)" />
+        </symbol>
+        <symbol id="icon-triangle-right" viewBox="0 0 7 7">
+            <path d="M3.5 0L7 4H0z" transform="rotate(-90 301 344) rotate(180 322.5 24.25)" />
+        </symbol>
+    </svg>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__menu container">
+                <div class="header__wrapper">
+                    <a class="header__logo" href="main.html" aria-label="Переход на главную">
+                        <img src="img/svg/logo.svg" alt="Логотип компании Nikolaev.group">
+                    </a>
+                    <button class="header__btn-menu btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"></button>
+                </div>
+                <div class="header__wrapper-second">
+                    <div class="header__menu-wrapper">
+                        <!--<div class="header__search">
+                            <form action="main.html" class="search">
+                                <label for="header-search" class="visually-hidden">Поиск по сайту</label>
+                                <input class="search__input" type="search" name="search" id="header-search" placeholder="Поиск">
+                                <button type="submit" class="search__submit" aria-label="Найти на сайте">
+                                    <svg class="search__icon" width="18" height="18">
+                                        <use xlink:href="#icon-search"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>-->
+                        <nav class="header__menu main-nav">
+                            <ul class="main-nav__list">
+                                <li class="main-nav__item">
+                                    <a class="main-nav__link main-nav__link--arrow" href="#" id="menu-1">Внедрение AMO crm</a>
+                                    <div class="main-nav__menu" data-menu="menu-1">
+                                        <div class="main-nav__title-wrapper">
+                                            <button class="main-nav__menu-title" type="button">Внедрение AMO crm</button>
+                                        </div>
+                                        <div class="main-nav__menu-item">
+                                            <ul class="main-nav__menu-second main-nav__menu-second--services">
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">AmoCRM</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Битрикс24</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Отрасли решения</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link">Sensei</a>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link">IP Телефония</a>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link">Аналитика</a>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Маркетинг</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-nav__contacts-wrapper">
+                                            <section class="contacts contacts--header">
+                                                <h2 class="visually-hidden">Наши контакты</h2>
+                                                <ul class="contacts__list contacts__list--header">
+                                                    <li class="contacts__item">
+                                                        <a href="tel:+79643240087" class="contacts__link" aria-label="Позвонить по номеру +79643240087">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-phone"></use>
+                                                            </svg>
+                                                            +7 964 324 00 87
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item">
+                                                        <a href="#" class="contacts__link" target="_blank" rel="nofollow noopener" aria-label="Перейти на страницу в Instagram">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-instagram"></use>
+                                                            </svg>
+                                                            nikolaev.group
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item contacts__item--mail">
+                                                        <a href="mailto:hello@nikolaev.group" class="contacts__link" aria-label="Написать e-mail">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-email"></use>
+                                                            </svg>
+                                                            hello@nikolaev.group
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item">
+                                                        <address class="contacts__address">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-pin"></use>
+                                                            </svg>
+                                                            Санкт-Петербург, Пулковское шоссе, дом 40/4,<br> Бизнес-центр<br> «ТЕХНОПОЛИС»
+                                                        </address>
+                                                    </li>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a class="main-nav__link main-nav__link--arrow" href="#" id="menu-2">Внедрение Битрикс 24</a>
+                                    <div class="main-nav__menu" data-menu="menu-2">
+                                        <div class="main-nav__title-wrapper">
+                                            <button class="main-nav__menu-title" type="button">Внедрение Битрикс 24</button>
+                                        </div>
+                                        <div class="main-nav__menu-item">
+                                            <ul class="main-nav__menu-second main-nav__menu-second--services">
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Клиент 1</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Клиент 2</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Клиент 3</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link">Клиент 4</a>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link">Клиент 5</a>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link">Клиент 6</a>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Клиент 7</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-nav__contacts-wrapper">
+                                            <section class="contacts contacts--header">
+                                                <h2 class="visually-hidden">Наши контакты</h2>
+                                                <ul class="contacts__list contacts__list--header">
+                                                    <li class="contacts__item">
+                                                        <a href="tel:+79643240087" class="contacts__link" aria-label="Позвонить по номеру +79643240087">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-phone"></use>
+                                                            </svg>
+                                                            +7 964 324 00 87
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item">
+                                                        <a href="#" class="contacts__link" target="_blank" rel="nofollow noopener" aria-label="Перейти на страницу в Instagram">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-instagram"></use>
+                                                            </svg>
+                                                            nikolaev.group
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item contacts__item--mail">
+                                                        <a href="mailto:hello@nikolaev.group" class="contacts__link" aria-label="Написать e-mail">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-email"></use>
+                                                            </svg>
+                                                            hello@nikolaev.group
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item">
+                                                        <address class="contacts__address">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-pin"></use>
+                                                            </svg>
+                                                            Санкт-Петербург, Пулковское шоссе, дом 40/4,<br> Бизнес-центр<br> «ТЕХНОПОЛИС»
+                                                        </address>
+                                                    </li>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a class="main-nav__link main-nav__link--arrow" href="#" id="menu-3">Услуги</a>
+                                    <div class="main-nav__menu" data-menu="menu-3">
+                                        <div class="main-nav__title-wrapper">
+                                            <button class="main-nav__menu-title" type="button">Услуги</button>
+                                        </div>
+                                        <div class="main-nav__menu-item">
+                                            <ul class="main-nav__menu-second main-nav__menu-second--services">
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Миссия</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Команда</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Пресса</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link">Контакты</a>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link">История создания</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-nav__contacts-wrapper">
+                                            <section class="contacts contacts--header">
+                                                <h2 class="visually-hidden">Наши контакты</h2>
+                                                <ul class="contacts__list contacts__list--header">
+                                                    <li class="contacts__item">
+                                                        <a href="tel:+79643240087" class="contacts__link" aria-label="Позвонить по номеру +79643240087">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-phone"></use>
+                                                            </svg>
+                                                            +7 964 324 00 87
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item">
+                                                        <a href="#" class="contacts__link" target="_blank" rel="nofollow noopener" aria-label="Перейти на страницу в Instagram">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-instagram"></use>
+                                                            </svg>
+                                                            nikolaev.group
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item contacts__item--mail">
+                                                        <a href="mailto:hello@nikolaev.group" class="contacts__link" aria-label="Написать e-mail">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-email"></use>
+                                                            </svg>
+                                                            hello@nikolaev.group
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item">
+                                                        <address class="contacts__address">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-pin"></use>
+                                                            </svg>
+                                                            Санкт-Петербург, Пулковское шоссе, дом 40/4,<br> Бизнес-центр<br> «ТЕХНОПОЛИС»
+                                                        </address>
+                                                    </li>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a class="main-nav__link main-nav__link--arrow" href="#" id="menu-4">Лицензии</a>
+                                    <div class="main-nav__menu" data-menu="menu-4">
+                                        <div class="main-nav__title-wrapper">
+                                            <button class="main-nav__menu-title" type="button">Лицензии</button>
+                                        </div>
+                                        <div class="main-nav__menu-item">
+                                            <ul class="main-nav__menu-second main-nav__menu-second--services">
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Миссия</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Команда</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link main-nav__second-link--arrow">Пресса</a>
+                                                    <ul class="main-nav__menu-third">
+                                                        <li><a href="#">Сопровождение и развитие AmoCRM</a></li>
+                                                        <li><a href="#">Аудит AmoCRM</a></li>
+                                                        <li><a href="#">Внедрение AmoCRM</a></li>
+                                                        <li><a href="#">Продление лицензии AmoCRM</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link">Контакты</a>
+                                                </li>
+                                                <li class="main-nav__second-item">
+                                                    <a href="#" class="main-nav__second-link">История создания</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="main-nav__contacts-wrapper">
+                                            <section class="contacts contacts--header">
+                                                <h2 class="visually-hidden">Наши контакты</h2>
+                                                <ul class="contacts__list contacts__list--header">
+                                                    <li class="contacts__item">
+                                                        <a href="tel:+79643240087" class="contacts__link" aria-label="Позвонить по номеру +79643240087">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-phone"></use>
+                                                            </svg>
+                                                            +7 964 324 00 87
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item">
+                                                        <a href="#" class="contacts__link" target="_blank" rel="nofollow noopener" aria-label="Перейти на страницу в Instagram">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-instagram"></use>
+                                                            </svg>
+                                                            nikolaev.group
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item contacts__item--mail">
+                                                        <a href="mailto:hello@nikolaev.group" class="contacts__link" aria-label="Написать e-mail">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-email"></use>
+                                                            </svg>
+                                                            hello@nikolaev.group
+                                                        </a>
+                                                    </li>
+                                                    <li class="contacts__item">
+                                                        <address class="contacts__address">
+                                                            <svg class="contacts__icon" width="16" height="16">
+                                                                <use xlink:href="#icon-pin"></use>
+                                                            </svg>
+                                                            Санкт-Петербург, Пулковское шоссе, дом 40/4,<br> Бизнес-центр<br> «ТЕХНОПОЛИС»
+                                                        </address>
+                                                    </li>
+                                                </ul>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="header__btn-wrapper">
+                                <a class="contacts__link" href="tel:88003023275" aria-label="Позвонить по номеру 88003023275">
+                                    <svg class="contacts__icon contacts__icon--footer" width="16" height="16">
+                                        <use xlink:href="#icon-phone"></use>
+                                    </svg>
+                                    8 800 302 32 75
+                                </a>
+                                <a class="btn btn--whatsapp btn--whatsapp_solid btn--small" href="https://wa.me/+79643240087/?text=Хочу%20обсудить%20внедрение%20CRM" target="_blank">Написать в Whatsapp</a>
+                            </div>
+                        </nav>
+                        <div class="header__contacts">
+                            <section class="contacts contacts--header">
+                                <h2 class="visually-hidden">Наши контакты</h2>
+                                <ul class="contacts__list contacts__list--header">
+                                    <li class="contacts__item">
+                                        <a href="tel:+79643240087" class="contacts__link" aria-label="Позвонить по номеру +79643240087">
+                                            <svg class="contacts__icon" width="16" height="16">
+                                                <use xlink:href="#icon-phone"></use>
+                                            </svg>
+                                            +7 964 324 00 87
+                                        </a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="#" class="contacts__link" target="_blank" rel="nofollow noopener" aria-label="Перейти на страницу в Instagram">
+                                            <svg class="contacts__icon" width="16" height="16">
+                                                <use xlink:href="#icon-instagram"></use>
+                                            </svg>
+                                            nikolaev.group
+                                        </a>
+                                    </li>
+                                    <li class="contacts__item contacts__item--mail">
+                                        <a href="mailto:hello@nikolaev.group" class="contacts__link" aria-label="Написать e-mail">
+                                            <svg class="contacts__icon" width="16" height="16">
+                                                <use xlink:href="#icon-email"></use>
+                                            </svg>
+                                            hello@nikolaev.group
+                                        </a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <address class="contacts__address">
+                                            <svg class="contacts__icon" width="16" height="16">
+                                                <use xlink:href="#icon-pin"></use>
+                                            </svg>
+                                            Санкт-Петербург, Пулковское шоссе, дом 40/4,<br> Бизнес-центр<br> «ТЕХНОПОЛИС»
+                                        </address>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="reasons">
+                <div class="container">
+                    <h2 class="reasons__title title title--h2">4 причины, почему вы здесь:</h2>
+                    <ol class="reasons__list">
+                        <li class="reasons__list-item">
+                            <div class="reason reason--type_1">
+                                <p class="reason__num">01</p>
+                                <p class="reason__text">Клиенты приходят,<br> но продаж нет</p>
+                            </div>
+                        </li>
+                        <li class="reasons__list-item">
+                            <div class="reason reason--type_2">
+                                <p class="reason__num">02</p>
+                                <p class="reason__text">Тяжело управлять<br> бизнес-процессами</p>
+                            </div>
+                        </li>
+                        <li class="reasons__list-item">
+                            <div class="reason reason--type_1">
+                                <p class="reason__num">03</p>
+                                <p class="reason__text">Обилие<br> бессмысленных<br> итераций</p>
+                            </div>
+                        </li>
+                        <li class="reasons__list-item">
+                            <div class="reason reason--type_2">
+                                <p class="reason__num">04</p>
+                                <p class="reason__text">Непонятен источник<br> притока клиентов</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="how-we-work">
+                <div class="container">
+                    <h2 class="how-we-work__title title title--h2">Как мы работаем?</h2>
+                    <p class="how-we-work__text">Мы находим оптимальный путь<br> для достижения ваших целей</p>
+                    <picture>
+                        <source srcset="img/content/how_we_work.svg" media="(min-width:768px)">
+                        <img src="img/content/how_we_work_mobile.svg" alt="">
+                    </picture>
+                </div>
+            </section>
+
+            <section class="our-services">
+                <div class="container">
+                    <h2 class="our-services__title title title--h2">Наши услуги</h2>
+            
+                    <div class="our-services__wrapper">
+                        <div class="our-services__menu-block">
+                            <ul class="left-menu">
+                                <li class="left-menu__item left-menu__item--toggler"><button class="left-menu__button" type="button">Внедрение Битрикс24</button></li>
+                                <li class="left-menu__item"><button class="left-menu__button" type="button">Внедрение Битрикс24</button></li>
+                                <li class="left-menu__item"><button class="left-menu__button" type="button">Внедрение AmoCRM</button></li>
+                                <li class="left-menu__item"><button class="left-menu__button" type="button">Маркетинг</button></li>
+                                <li class="left-menu__item"><button class="left-menu__button" type="button">Аналитика</button></li>
+                                <li class="left-menu__item"><button class="left-menu__button" type="button">Отраслевые решения</button></li>
+                            </ul>
+                        </div>
+                        <div class="our-services__list-block">
+                            <ul class="services-cards">
+                                <li class="services-cards__item">
+                                    <div class="service-card">
+                                        <h3 class="service-card__title">Пакет<br> Быстрый старт</h3>
+                                        <div class="service-card__text">
+                                            <p>Когда небольшой компании необходимо в сжатые сроки повысить эффективность сотрудников и увеличить продажи.</p>
+                                            <p>Настроим Битрикс24 за 10 дней и 39900 руб</p>
+                                        </div>
+                                        <a class="service-card__link" href="#">
+                                            Подробнее
+                                            <span class="service-card__link-icon">
+                                                <svg>
+                                                    <use xlink:href="#icon-triangle-right"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="services-cards__item">
+                                    <div class="service-card">
+                                        <h3 class="service-card__title">Настройка Битрикс24 и автоматизация продаж</h3>
+                                        <div class="service-card__text">
+                                            <p>Почувствуйте разницу с автоматизированными ключевыми бизнес-процессами и воронками продаж.</p>
+                                        </div>
+                                        <a class="service-card__link" href="#">
+                                            Подробнее
+                                            <span class="service-card__link-icon">
+                                                <svg>
+                                                    <use xlink:href="#icon-triangle-right"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="services-cards__item">
+                                    <div class="service-card">
+                                        <h3 class="service-card__title">Интеграция Битрикс с телефонией</h3>
+                                        <div class="service-card__text">
+                                            <p>Повышайте эффективность персонала, дисциплинируйте. Обращайтесь к звонящему клиенту по имени — Битрикс24 помнит всё.</p>
+                                        </div>
+                                        <a class="service-card__link" href="#">
+                                            Подробнее
+                                            <span class="service-card__link-icon">
+                                                <svg>
+                                                    <use xlink:href="#icon-triangle-right"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="services-cards__item">
+                                    <div class="service-card">
+                                        <h3 class="service-card__title">Интеграция Битрикс с сайтом или лендингом</h3>
+                                        <div class="service-card__text">
+                                            <p>Обрабатывайте заявки проще и быстрее. Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</p>
+                                        </div>
+                                        <a class="service-card__link" href="#">
+                                            Подробнее
+                                            <span class="service-card__link-icon">
+                                                <svg>
+                                                    <use xlink:href="#icon-triangle-right"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="services-cards__item">
+                                    <div class="service-card">
+                                        <h3 class="service-card__title">Подключение средств коммуникаций</h3>
+                                        <div class="service-card__text">
+                                            <p>Важно не только быстро среагировать на запрос клиента, но и обеспечить ему полноценный сервис и персональный подход.</p>
+                                        </div>
+                                        <a class="service-card__link" href="#">
+                                            Подробнее
+                                            <span class="service-card__link-icon">
+                                                <svg>
+                                                    <use xlink:href="#icon-triangle-right"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="services-cards__item">
+                                    <div class="service-card">
+                                        <h3 class="service-card__title">Интеграция Битрикс24 и 1С</h3>
+                                        <div class="service-card__text">
+                                            <p>Ускоряйте процессы и продавайте больше. Создавайте заказы покупателя прямо из CRM-системы.</p>
+                                        </div>
+                                        <a class="service-card__link" href="#">
+                                            Подробнее
+                                            <span class="service-card__link-icon">
+                                                <svg>
+                                                    <use xlink:href="#icon-triangle-right"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="order-service">
+              <div class="container">
+                <div class="order-service__wrapper">
+                  <h2 class="order-service__name title title--h2">Не знаете, с чего начать?</h2>
+                  <p class="order-service__desc">Чтобы начать работу, достаточно ответить на несколько вопросов. <br> Мы узнаем о задаче чуть больше, а также сможем рассчитать стоимость и сроки вашего проекта.</p>
+                </div>
+            
+                <form class="calculator" action="https://echo.htmlacademy.ru" method="POST">
+                  <div class="calculator__questions-wrapper">
+                    <p class="calculator__name">Информация о проекте</p>
+                    <ul class="calculator__questions-list">
+                      <li class="calculator__questions-item calculator__questions-item--active" id="service-calc">
+                        <button class="calculator__questions-btn" type="button">Нужная услуга:</button>
+                        <div class="calculator__service-value">
+                          -
+                        </div>
+                      </li>
+                      <li class="calculator__questions-item" id="scope-calc">
+                        <button class="calculator__questions-btn" type="button">Сфера деятельности</button>
+                        <div class="calculator__scope-value">
+                          -
+                        </div>
+                      </li>
+                      <li class="calculator__questions-item" id="employees-calc">
+                        <button class="calculator__questions-btn" type="button">Количество сотрудников:</button>
+                        <div class="calculator__employees-value">
+                          -
+                        </div>
+                      </li>
+                      <li class="calculator__questions-item" id="feedback-calc">
+                        <button class="calculator__questions-btn" type="button">Связь с нами</button>
+                        <div class="calculator__feedback-value">
+                          -
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+            
+            
+                  <div class="calculator__answers-wrapper">
+                    <div class="calculator__answers-progress">
+                      <div class="calculator__number-wrapper">
+                        <input class="calculator__number-step" type="number" value="1" min="1">/4
+                      </div>
+            
+                      <div class="calculator__bar-wrapper">
+                        <div class="calculator__progress-bar">
+            
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="calculator__answers-list">
+                      <li class="calculator__answers-item calculator__answers-item--active">
+                        <div class="calculator__services-list tab-list">
+                          <div class="tab-list__item tab-list__item--big">
+                            <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="amocrm" id="check-amocrm">
+                            <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-amocrm">AmoCRM</label>
+                          </div>
+                          <div class="tab-list__item tab-list__item--big">
+                            <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="bitrix" id="check-bitrix">
+                            <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-bitrix">Битрикс24</label>
+                          </div>
+                          <div class="tab-list__item tab-list__item--big">
+                            <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="solutions" id="check-solutions">
+                            <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-solutions">Отрасли решения</label>
+                          </div>
+                          <div class="tab-list__item tab-list__item--big">
+                            <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="sensei" id="check-sensei">
+                            <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-sensei">Sensei</label>
+                          </div>
+                          <div class="tab-list__item tab-list__item--big">
+                            <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="telephone" id="check-telephone">
+                            <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-telephone">IP Телефония</label>
+                          </div>
+                          <div class="tab-list__item tab-list__item--big">
+                            <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="analytics" id="check-analytics">
+                            <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-analytics">Аналитика</label>
+                          </div>
+                          <div class="tab-list__item tab-list__item--big">
+                            <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="marketing" id="check-marketing">
+                            <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-marketing">Маркетинг</label>
+                          </div>
+                        </div>
+                      </li>
+            
+                      <li class="calculator__answers-item">
+                        <div class="calculator__answers-scope">
+                          <!-- <label class="visually-hidden" for="field-scope">Введите сферу деятельности</label>
+                          <input type="text" name="scope-company"  placeholder="Введите сферу деятельности"> -->
+                          <label class="visually-hidden" for="field-scope">Количество комнат</label>
+                          <select class="calculator__scope-select" name="scope-company" id="field-scope">
+                            <option value="" hidden>Выберите сферу деятельности</option>
+                            <option value="it">IT</option>
+                            <option value="retail">Розничная торговля</option>
+                            <option value="building">Строительство</option>
+                            <option value="medicine">Медицина</option>
+                            <option value="horeca">Horeca</option>
+                            <option value="hotel">Гостиничный бизнес</option>
+                            <option value="legal">Юридические услуги</option>
+                            <option value="other">Другое</option>
+                          </select>
+                        </div>
+                      </li>
+            
+                      <li class="calculator__answers-item">
+                        <div class="calculator__employees-wrapper">
+                          <div class="calculator__employees-item calculator__employees-item--stepper stepper">
+                            <button class="stepper__btn stepper__btn--minus" type="button"><span class="visually-hidden">Убавить</span></button>
+                            <label class="visually-hidden" for="field-employees-stepper">Введите ваш вариант</label>
+                            <input class="stepper__input" type="number" name="employees-stepper" id="field-employees-stepper" value="5" min="1">
+                            <button class="stepper__btn stepper__btn--plus" type="button"><span class="visually-hidden">Прибавить</span></button>
+                          </div>
+                          <div class="calculator__employees-item calculator__employees-item--amount">
+                            <label class="visually-hidden" for="field-employees">Введите ваш вариант</label>
+                            <input type="text" name="employees" id="field-employees" placeholder="Ваш вариант">
+                          </div>
+                        </div>
+                      </li>
+            
+                      <li class="calculator__answers-item">
+                        <div class="calculator__form-feedback form-feedback">
+                          <div class="calculator__feedback-wrapper calculator__feedback-wrapper--person">
+                            <div class="form-feedback__input-wrapper form-feedback__input-wrapper--name">
+                              <input class="form-feedback__input form-feedback__input-name" type="text" name="name-calc" id="name-calculator" required>
+                              <label for="name-calculator">Введите имя*</label>
+                            </div>
+                            <div class="form-feedback__input-wrapper form-feedback__input-wrapper--tel">
+                              <input class="form-feedback__input form-feedback__input--tel input-tel" type="tel" name="tel-calc" id="tel-calculator" minlength="22" required>
+                              <label for="tel-calculator">Номер телефона*</label>
+                            </div>
+                          </div>
+                          <div class="form-feedback__input-wrapper form-feedback__input-wrapper--email">
+                            <div class="calculator__feedback-wrapper calculator__feedback-wrapper--email">
+                              <input class="form-feedback__input form-feedback__input--email" type="email" name="email-calc" id="email-calculator">
+                              <label for="email-calculator">Email</label>
+                            </div>
+                          </div>
+                          <div class="form-feedback__input-wrapper">
+                            <div class="calculator__feedback-wrapper">
+                              <textarea class="form-feedback__input form-feedback__input--comment" name="comment-calc" id="comment-calculator" rows="3"></textarea>
+                              <label for="comment-calculator">Комментарий</label>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="calculator__buttons">
+                      <button class="calculator__btn calculator__btn--prev calculator__btn--inactive btn btn--big btn--black" type="button"><span class="calculator__btn-name">Предыдущий вопрос</span><span class="calculator__btn-name2">Назад</span></button>
+                      <button class="calculator__btn calculator__btn--next calculator__btn--width calculator__btn--next-inactive btn btn--black btn--big" type="button"><span class="calculator__btn-name">Следующий шаг</span><span class="calculator__btn-name2">Продолжить</span></button>
+                      <button class="calculator__btn calculator__btn--submit calculator__btn--inactive btn btn--blue btn--big" type="submit">Отправить</button>
+                    </div>
+                    <div class="calculator__message-wrapper">
+                      <button class="calculator__message-btn" type="button" aria-label="Закрыть попап">
+                        <svg width="15" height="15">
+                          <use xlink:href="#icon-close"></use>
+                        </svg>
+                      </button>
+                      <p class="calculator__message-thanks">
+                        Спасибо! Начинаем формировать для вас ознакомительный документ.<br>
+                        Скоро с вами свяжется наш менеджер.<br><br>
+                        Благодарим за заявку!
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+
+            <section class="our-team">
+              <div class="our-team__wrapper container">
+                <div class="our-team__text-wrapper">
+                  <h2 class="title title--h2">Команда Nikolaev.group</h2>
+                  <p>В нашей компании работают специалисты с опытом построения комплексных систем продаж: аналитики, маркетологи, веб-разработчики и программисты, руководители проектов.<br><br> Каждый ценен тем, что, помимо высокой профессиональной квалификации, имеет опыт запуска и развития сильных ритейл-проектов.
+                  </p>
+                </div>
+                <div class="our-team__photo-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/team.webp 1x, img/content/team@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/team-375.webp 1x, img/content/team-375@2x.webp 2x">
+            
+                    <source media="(min-width: 1024px)" srcset="img/content/team.jpg 1x, img/content/team@2x.jpg 2x">
+                    <img src="img/content/team-375.jpg" width="335" height="286" srcset="img/content/team-375@2x.jpg 2x" alt="Фото команды Nikolaev.group">
+                  </picture>
+                </div>
+              </div>
+            </section>
+
+            <section class="our-blog">
+              <div class="container">
+                <div class="title-content">
+                  <h2 class="title title--h2">Блог</h2>
+                  <p>Удобный интерфейс CRM обеспечивает оперативный доступ к&nbsp;информации о&nbsp;клиенте и&nbsp;предлагает инструменты для операций со&nbsp;счетами, профилем, карточками, покупками и&nbsp;т.&nbsp;д.!</p>
+                </div>
+                <ul class="our-blog__list blog-list">
+                  <li class="blog-list__item">
+                    <section class="card-blog">
+                      <h2 class="visually-hidden">7 базовых типов воронки продаж: этапы и примеры автоматизации</h2>
+                      <a href="article.html" class="card-blog__link">
+                        <div class="card-blog__img-wrapper">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/news-1.webp 1x, img/content/news-1@2x.webp 2x">
+                            <source type="image/webp" srcset="img/content/news-1-375.webp 1x, img/content/news-1-375@2x.webp 2x">
+            
+                            <source media="(min-width: 1024px)" srcset="img/content/news-1.jpg 1x, img/content/news-1@2x.jpg 2x">
+                            <img src="img/content/news-1-375.jpg" width="335" height="170" srcset="img/content/news-1-375@2x.jpg 2x" alt="Фото новости 7 базовых типов воронки продаж: этапы и примеры автоматизации">
+                          </picture>
+                        </div>
+                        <div class="card-blog__info-wrapper">
+                          <time class="card-blog__date" datetime="2020-09-18">
+                            18.09.2020
+                          </time>
+                          <p class="card-blog__name">
+                            7 базовых типов воронки продаж: этапы и примеры автоматизации
+                          </p>
+                        </div>
+                      </a>
+                    </section>
+                  </li>
+                  <li class="blog-list__item">
+                    <section class="card-blog">
+                      <h2 class="visually-hidden">Ошибки самостоятельного внедрения CRM. Когда деньги вложены, время потрачено, а результат не случился.</h2>
+                      <a href="#" class="card-blog__link">
+                        <div class="card-blog__img-wrapper">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/news-2.webp 1x, img/content/news-2@2x.webp 2x">
+                            <source type="image/webp" srcset="img/content/news-2-375.webp 1x, img/content/news-2-375@2x.webp 2x">
+            
+                            <source media="(min-width: 1024px)" srcset="img/content/news-2.jpg 1x, img/content/news-2@2x.jpg 2x">
+                            <img src="img/content/news-2-375.jpg" width="335" height="170" srcset="img/content/news-2-375@2x.jpg 2x" alt="Ошибки самостоятельного внедрения CRM. Когда деньги вложены, время потрачено, а результат не случился.">
+                          </picture>
+                        </div>
+                        <div class="card-blog__info-wrapper">
+                          <time class="card-blog__date" datetime="2020-05-22">
+                            22.05.2020
+                          </time>
+                          <p class="card-blog__name">
+                            Ошибки самостоятельного внедрения CRM. Когда деньги вложены, время
+                            потрачено, а результат не случился.
+                          </p>
+                        </div>
+                      </a>
+                    </section>
+                  </li>
+                  <li class="blog-list__item">
+                    <section class="card-blog">
+                      <h2 class="visually-hidden">4 неповерхностных метрики: за чем следить, когда продажи падают</h2>
+                      <a href="#" class="card-blog__link">
+                        <div class="card-blog__img-wrapper">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/news-3.webp 1x, img/content/news-3@2x.webp 2x">
+                            <source type="image/webp" srcset="img/content/news-3-375.webp 1x, img/content/news-3-375@2x.webp 2x">
+            
+                            <source media="(min-width: 1024px)" srcset="img/content/news-3.jpg 1x, img/content/news-3@2x.jpg 2x">
+                            <img src="img/content/news-3-375.jpg" width="335" height="170" srcset="img/content/news-3-375@2x.jpg 2x" alt="Фото новости 4 неповерхностных метрики: за чем следить, когда продажи падают">
+                          </picture>
+                        </div>
+                        <div class="card-blog__info-wrapper">
+                          <time class="card-blog__date" datetime="2020-04-11">
+                            11.04.2020
+                          </time>
+                          <p class="card-blog__name">
+                            4 неповерхностных метрики: за чем следить, когда продажи падают
+                          </p>
+                        </div>
+                      </a>
+                    </section>
+                  </li>
+                  <li class="blog-list__item">
+                    <section class="card-blog">
+                      <h2 class="visually-hidden">Управление проектами по Agile</h2>
+                      <a href="#" class="card-blog__link">
+                        <div class="card-blog__img-wrapper">
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/news-4.webp 1x, img/content/news-4@2x.webp 2x">
+                            <source type="image/webp" srcset="img/content/news-4-375.webp 1x, img/content/news-4-375@2x.webp 2x">
+            
+                            <source media="(min-width: 1024px)" srcset="img/content/news-4.jpg 1x, img/content/news-4@2x.jpg 2x">
+                            <img src="img/content/news-4-375.jpg" width="335" height="170" srcset="img/content/news-4-375@2x.jpg 2x" alt="Фото новости Управление проектами по Agile">
+                          </picture>
+                        </div>
+                        <div class="card-blog__info-wrapper">
+                          <time class="card-blog__date" datetime="2020-03-21">
+                            21.03.2020
+                          </time>
+                          <p class="card-blog__name">
+                            Управление проектами по Agile
+                          </p>
+                        </div>
+                      </a>
+                    </section>
+                  </li>
+                </ul>
+                <div class="our-blog__btn">
+                  <a href="#" class="btn btn--transparent btn--big">Смотреть все статьи</a>
+                </div>
+              </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper container">
+                <div class="footer__header">
+        
+                    <a href="#" class="footer__logo">
+                        <img src="img/svg/logo.svg" width="140" height="50" alt="Логотип комании">
+                    </a>
+        
+                    <!--<div class="footer__search">
+                        <form action="main.html" class="search">
+                            <label for="footer-search" class="visually-hidden">Поиск по сайту</label>
+                            <input class="search__input" type="search" name="search" id="footer-search" placeholder="Поиск">
+                            <button type="submit" class="search__submit" aria-label="Найти на сайте">
+                                <svg class="search__icon" width="18" height="18">
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>-->
+                </div>
+        
+                <div class="footer__main">
+                    <section class="footer__menu">
+                        <h2 class="visually-hidden">Меню сайта</h2>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <p class="footer__list-title">о компании</p>
+                                <ul class="footer__sublist">
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Команда</a>
+                                    </li>
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Вакансии</a>
+                                    </li>
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Блог</a>
+                                    </li>
+                                </ul>
+                            </li>
+        
+                            <li class="footer__list-item">
+                                <p class="footer__list-title">услуги</p>
+                                <ul class="footer__sublist">
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Битрикс24</a>
+                                    </li>
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">AmoCrm</a>
+                                    </li>
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Отраслевые решения</a>
+                                    </li>
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Sensei</a>
+                                    </li>
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">IP телефония</a>
+                                    </li>
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Аналитика</a>
+                                    </li>
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Маркетинг</a>
+                                    </li>
+                                </ul>
+                            </li>
+        
+                            <li class="footer__list-item">
+                                <p class="footer__list-title">клиенты</p>
+                                <ul class="footer__sublist">
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Кейсы</a>
+                                    </li>
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Отзывы</a>
+                                    </li>
+                                </ul>
+                            </li>
+        
+                            <li class="footer__list-item">
+                                <p class="footer__list-title">Лицензии</p>
+                                <ul class="footer__sublist">
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Кейсы</a>
+                                    </li>
+                                    <li class="footer__sublist-item">
+                                        <a href="#" class="footer__sublist-link">Отзывы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+        
+                    <section class="contacts contacts--footer">
+                        <h2 class="visually-hidden">Наши контакты</h2>
+                        <ul class="contacts__list">
+                            <li class="contacts__item contacts__item--footer">
+                                <address class="contacts__address">
+                                    <a href="https://goo.gl/maps/FPWdcqoWESWasboj9" target="_blank">
+                                        <svg class="contacts__icon contacts__icon--footer" width="16" height="16">
+                                            <use xlink:href="#icon-pin"></use>
+                                        </svg>
+                                        Санкт-Петербург, Пулковское шоссе, дом 40/4, Бизнес-центр «ТЕХНОПОЛИС»
+                                    </a>
+                                </address>
+                            </li>
+                            <li class="contacts__item contacts__item--footer">
+                                <a href="tel:+79643240087" class="contacts__link" aria-label="Позвонить по номеру +79643240087">
+                                    <svg class="contacts__icon contacts__icon--footer" width="16" height="16">
+                                        <use xlink:href="#icon-phone"></use>
+                                    </svg>
+                                    8 800 302 32 75
+                                </a>
+                            </li>
+                            <li class="contacts__item contacts__item--footer">
+                                <a href="mailto:hello@nikolaev.group" class="contacts__link" aria-label="Написать e-mail">
+                                    <svg class="contacts__icon contacts__icon--footer" width="16" height="16">
+                                        <use xlink:href="#icon-email"></use>
+                                    </svg>
+                                    hello@nikolaev.group
+                                </a>
+                            </li>
+                            <li class="contacts__item contacts__item--footer">
+                                <div class="contacts__link">ИП Николаева Мария Михайловна</div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script src="js/menu.js"></script>
+<script src="js/calculator.js"></script>
+<script>
+    toggleMenu();
+    calculator();
+</script>
+
+</html>

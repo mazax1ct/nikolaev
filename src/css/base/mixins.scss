@@ -1,0 +1,56 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+// Desktop first
+
+// до 1920px
+@mixin viewport--xl {
+  @media (max-width: $viewport--xxl - 1) {
+    @content;
+  }
+}
+
+// до 1440px
+@mixin viewport--lg {
+  @media (max-width: $viewport--xl - 1) {
+    @content;
+  }
+}
+
+// до 1024px
+@mixin viewport--md {
+  @media (max-width: $viewport--lg - 1) {
+    @content;
+  }
+}
+
+// до 768px
+@mixin viewport--sm {
+  @media (max-width: $viewport--md - 1) {
+    @content;
+  }
+}
+
+// до 375px
+@mixin viewport--xs {
+  @media (max-width: $viewport--sm - 1) {
+    @content;
+  }
+}
+
+// Reset list indents
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Set linear gradient
+
+@mixin linear-gradient($direction, $percent: 100%) {
+  background-image: linear-gradient($direction, $color-turquoise $percent, $color-neon-blue);
+}

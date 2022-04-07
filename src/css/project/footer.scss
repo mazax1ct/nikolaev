@@ -1,0 +1,145 @@
+.footer {
+  min-height: 489px;
+  padding: 60px 0;
+
+  background-color: $color-ghost-white;
+  border-top: 1px solid #d6dadf;
+
+  @include viewport--md {
+    padding: 40px 0;
+    margin-top: 30px;
+  }
+}
+
+.footer__header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+
+  @include viewport--lg {
+    display: block;
+  }
+
+  @include viewport--md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+
+  @include viewport--md {
+    flex-direction: column-reverse;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-right: 190px;
+
+  @include viewport--lg {
+    margin-bottom: 40px;
+  }
+
+  @include viewport--md {
+    margin-right: unset;
+    margin-bottom: unset;
+  }
+
+  & img {
+    display: inline;
+
+    @include viewport--md {
+      width: 100px;
+    }
+  }
+}
+
+.footer__search {
+  @include viewport--md {
+    display: none;
+  }
+}
+
+.footer__menu {
+  width: 57%;
+
+  @include viewport--md {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  @include viewport--lg {
+    width: 57%;
+  }
+}
+
+.footer__list,
+.footer__sublist {
+  @include reset-list;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer__list {
+  width: 99%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include viewport--md {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer__list-item {
+  @include viewport--md {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__list-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include viewport--md {
+    margin-bottom: 13px;
+  }
+}
+
+.footer__sublist-item {
+  @include viewport--md {
+    margin-bottom: 3px;
+  }
+}
+
+.footer__sublist-link {
+  position: relative;
+  display: block;
+  padding: 8px 20px 2px 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include viewport--md {
+    padding: 5px 10px;
+  }
+}

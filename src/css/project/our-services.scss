@@ -1,0 +1,131 @@
+.our-services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media(min-width: $viewport--xl) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+        @media(min-width: $viewport--xl) {
+            margin-bottom: 65px;
+        }
+    }
+
+    &__wrapper {
+        @media(min-width: $viewport--xl) {
+            display: flex;
+        }
+    }
+
+    &__menu-block {
+        @media(min-width: $viewport--xl) {
+            min-width: 270px;
+            width: 270px;
+        }
+    }
+}
+
+.services-cards {
+    display: grid;
+    list-style: none;
+    margin: 0 0 -32px;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__item {
+        margin-bottom: 32px;
+        padding-left: 12px;
+        padding-right: 12px;
+
+        &:nth-child(2) {
+            @media(min-width: $viewport--xl) {
+                margin-top: 40px !important;
+            }
+        }
+
+        &:nth-child(3) {
+            @media(min-width: $viewport--xl) {
+                margin-top: 80px;
+            }
+        }
+
+        &:nth-child(3n+1) {
+            @media(min-width: $viewport--xl) {
+                margin-top: -80px;
+            }
+        }
+
+        &:nth-child(3n+2) {
+            @media(min-width: $viewport--xl) {
+                margin-top: -40px;
+            }
+        }
+
+        &:first-child {
+            margin-top: 0 !important;
+        }
+    }
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 305px;
+    min-height: 420px;
+    padding: 48px 32px 54px;
+
+    &:hover {
+        background: linear-gradient(179.02deg, #1A36F9 0.98%, #4AFFDF 130.58%);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+        color: #fff;
+
+        .service-card__link {
+            color: #fff;
+        }
+
+        .service-card__link-icon {
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+        line-height: 1.21428;
+    }
+
+    &__link {
+        align-items: center;
+        display: inline-flex;
+        font-weight: 700;
+        margin-top: auto;
+    }
+
+    &__link-icon {
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid currentColor;
+        display: flex;
+        height: 24px;
+        justify-content: center;
+        margin-left: 8px;
+        width: 24px;
+
+        svg {
+            height: 7px;
+            width: 7px;
+        }
+    }
+}

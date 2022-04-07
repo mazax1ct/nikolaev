@@ -1,0 +1,357 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    @include viewport--md {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
+
+.main-nav__list {
+    @include reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    @include viewport--md {
+        flex-direction: column;
+        order: 1;
+        margin-right: 0;
+        padding-bottom: 318px;
+    }
+
+    &--hover {
+        @media (min-width: $viewport--lg) {
+            &:hover + .main-nav__menu-wrapper {
+                display: block;
+            }
+        }
+    }
+
+    & > li {
+        padding: 1px 0;
+        border-bottom: 3px solid transparent;
+        @include viewport--md {
+            padding: 0;
+        }
+
+        &:focus,
+        &:hover {
+            @media (min-width: $viewport--lg) {
+                border-bottom: 3px solid $color-default-black;
+                transition: border-bottom 1s ease;
+            }
+            @include viewport--md {
+                color: rgba($color-black, 0.5);
+            }
+        }
+
+        &:focus > .main-nav__menu,
+        &:hover > .main-nav__menu {
+            @media (min-width: $viewport--lg) {
+                display: flex;
+            }
+        }
+
+        & > a {
+            display: block;
+            padding: 33px 20px 30px 17px;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 700;
+            letter-spacing: 0.7px;
+            text-transform: uppercase;
+            color: $color-black;
+            @media(min-width: $viewport--xl) {
+                padding-left: 24px;
+                padding-right: 20px;
+            }
+            @media(min-width: $viewport--xxl) {
+                padding-left: 30px;
+                padding-right: 23px;
+            }
+            @include viewport--lg {
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 0.4px;
+            }
+            @include viewport--md {
+                display: inline-block;
+                padding: 8px 40px 8px 0;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.35px;
+            }
+        }
+    }
+}
+
+.main-nav__menu {
+    position: absolute;
+    top: 100%;
+    left: -30px;
+    z-index: 20;
+    display: none;
+    width: 1190px;
+    padding: 50px 46px 15px 50px;
+    background-color: $color-default-white;
+    border-top: 1px solid $color-solitude;
+    @include viewport--xl {
+        width: 100%;
+    }
+    @include viewport--lg {
+        padding: 30px;
+    }
+    @include viewport--md {
+        top: -72px;
+        left: 0;
+        padding: 0;
+        background-color: $color-default-white;
+
+        &--show {
+            display: block;
+        }
+    }
+}
+
+.main-nav__title-wrapper {
+    display: none;
+    @include viewport--md {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 50px;
+        border-bottom: 1px solid #e9ebef;
+    }
+    @include viewport--sm {
+        padding-left: 20px;
+    }
+}
+
+.main-nav__menu-title {
+    position: relative;
+    margin-right: 20px;
+    padding: 26px 26px 26px 28px;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.4px;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+        color: rgba($color-black, 0.5);
+    }
+
+    &:active {
+        color: rgba($color-black, 0.3);
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 27px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        background: url("../img/svg/arrow-right.svg") no-repeat;
+        transform: rotate(180deg);
+    }
+}
+
+.main-nav__menu-item {
+    padding: 0 20px;
+    @include viewport--lg {
+        padding-left: 0;
+    }
+    @include viewport--md {
+        min-height: 812px;
+        padding: 0 50px;
+        background-color: $color-default-white;
+    }
+    @include viewport--sm {
+        padding: 0 20px;
+    }
+}
+
+.main-nav__menu-second,
+.main-nav__menu-third {
+    @include reset-list;
+}
+
+.main-nav__menu-second a,
+.main-nav__menu-third a {
+    line-height: 19px;
+    font-weight: 600;
+    color: $color-black;
+}
+
+.main-nav__menu-second {
+    width: 245px;
+    @include viewport--lg {
+        width: 200px;
+    }
+    @include viewport--md {
+        width: 100%;
+    }
+
+    & > li {
+        &:not(:first-child) {
+            padding-top: 20px;
+        }
+        @media (min-width: $viewport--lg) {
+            &:focus > a,
+            &:hover > a {
+                font-weight: 700;
+                padding-left: 20px;
+                transition: padding-left 0.5s ease, font-weight 1s ease;
+            }
+
+            &:focus > a::before,
+            &:hover > a::before {
+                display: block;
+                transition: display 3s ease;
+            }
+
+            &:focus > ul,
+            &:hover > ul {
+                display: block;
+            }
+        }
+
+        & > a {
+            position: relative;
+
+            &::before {
+                display: none;
+                position: absolute;
+                content: "";
+                top: 6px;
+                left: 0;
+                width: 6px;
+                height: 6px;
+                background-color: $color-neon-blue;
+                border-radius: 50%;
+            }
+            @include viewport--md {
+                font-weight: 700;
+                line-height: 17px;
+
+                &:focus,
+                &:hover {
+                    color: rgba($color-default-black, 0.5);
+                }
+
+                &:active {
+                    color: rgba($color-default-black, 0.3);
+                }
+            }
+        }
+    }
+}
+
+.main-nav__link {
+    position: relative;
+
+    &--arrow {
+        &::after {
+            position: absolute;
+            content: "";
+            top: 47%;
+            right: 8px;
+            border-right: 6px solid $color-default-black;
+            border-top: 6px solid transparent;
+            transform: rotate(45deg);
+            @include viewport--md {
+                top: 40%;
+                transform: rotate(-45deg);
+            }
+            @media (min-width: $viewport--xl) {
+                right: 11px;
+            }
+        }
+        @media (min-width: $viewport--lg) {
+            &:hover {
+                &::after {
+                    top: 50%;
+                    transform: rotate(225deg);
+                }
+            }
+        }
+    }
+}
+
+.main-nav__second-link {
+    display: block;
+    @media (min-width: $viewport--lg) {
+        &--arrow {
+            &::after {
+                position: absolute;
+                content: "";
+                top: 3px;
+                right: 8px;
+                width: 12px;
+                height: 12px;
+                border: 1px solid $color-default-black;
+                border-left: none;
+                border-bottom: none;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.main-nav__menu-third {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 298px;
+    z-index: 100;
+    width: 50%;
+    height: 100%;
+    padding-top: 48px;
+    // padding-right: 300px;
+    padding-left: 70px;
+    @include viewport--xl {
+        width: 48%;
+    }
+    @include viewport--lg {
+        left: 179px;
+        width: 40%;
+        padding-top: 26px;
+    }
+    // @include viewport--lg {
+    //   left: 215px;
+    //   width: 80%;
+    // }
+    li {
+        margin-bottom: 20px;
+
+        a {
+            &:focus,
+            &:hover {
+                font-weight: 700;
+                text-decoration: underline;
+                transition: font-weight 0.7s ease, text-decoration 0.7s ease;
+            }
+
+            &:active {
+                color: rgba($color-black, 0.5);
+            }
+        }
+    }
+}
+
+.main-nav__contacts-wrapper {
+    width: 210px;
+    margin-left: auto;
+    @include viewport--lg {
+        width: 180px;
+    }
+    @include viewport--md {
+        display: none;
+    }
+}

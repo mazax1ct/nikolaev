@@ -1,0 +1,11 @@
+<svg id="arrow_r" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <rect id="Прямоугольник_398" data-name="Прямоугольник 398" class="cls-1" width="18" height="18" transform="translate(0 18) rotate(-90)"/>
+  <path id="Контур_1139" data-name="Контур 1139" d="M301.508,420.086l-6.044-6.048a.647.647,0,0,0-.459-.192h0a.644.644,0,0,0-.459.19.651.651,0,0,0,0,.919l5.542,5.543-5.54,5.538a.65.65,0,0,0,.44,1.118H295a.66.66,0,0,0,.465-.2l6-6a.652.652,0,0,0,.047-.872Z" transform="translate(-288.946 -411.504)"/>
+</svg>

@@ -1,0 +1,19 @@
+.our-blog {
+  padding-top: 60px;
+  padding-bottom: 125px;
+
+  @include viewport--md {
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+}
+
+.our-blog__btn {
+  text-align: center;
+
+  a {
+    @include viewport--md {
+      width: 100%;
+    }
+  }
+}

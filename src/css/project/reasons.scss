@@ -1,0 +1,112 @@
+.reasons {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media(min-width: $viewport--xl) {
+        min-height: 640px;
+        padding-top: 40px;
+        padding-bottom: 132px;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        text-align: center;
+        @media(min-width: $viewport--xl) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @media(min-width: $viewport--md) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+            @media(min-width: $viewport--xlg) {
+                margin-bottom: 0;
+            }
+        }
+        @media(min-width: $viewport--md) {
+            padding-left: 22px;
+            padding-right: 22px;
+            max-width: 349px;
+            width: 50%;
+        }
+        @media(min-width: $viewport--xlg) {
+            margin-bottom: 0;
+            padding-left: 11px;
+            padding-right: 11px;
+            width: 25%;
+        }
+        @media(min-width: $viewport--xl) {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+
+        &:nth-child(even) {
+            @media(min-width: $viewport--xlg) {
+                padding-top: 32px;
+            }
+        }
+    }
+}
+
+.reason {
+    border-radius: 5px;
+    min-height: 332px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 305px;
+    padding: 30px 24px;
+
+    &--type_1 {
+        background: linear-gradient(179.59deg, #1A36F9 -29.81%, #4AFFDF 143.36%);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+
+        .reason__num {
+            color: transparent;
+            -webkit-text-stroke: 2px $color-default-white;
+        }
+
+        .reason__text {
+            color: $color-default-white;
+        }
+    }
+
+    &--type_2 {
+        background-color: #fff;
+
+        .reason__num {
+            background: linear-gradient(177.39deg, #4AFFDF -17.77%, #1A36F9 118.8%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .reason__text {
+            color: $color-raven;
+        }
+    }
+
+    &__num {
+        font-size: 96px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        line-height: 1.04;
+        margin-top: 0;
+        margin-bottom: 68px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.4px;
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-1{fill:#6e6e6e}
+        </style>
+    </defs>
+    <g id="plus" transform="translate(-926 -2169)">
+        <rect id="Прямоугольник_1822" width="16" height="2" class="cls-1" rx="1" transform="translate(926 2176)"/>
+        <rect id="Прямоугольник_1823" width="16" height="2" class="cls-1" rx="1" transform="rotate(-90 1559 626)"/>
+    </g>
+</svg>

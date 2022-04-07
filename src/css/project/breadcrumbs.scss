@@ -1,0 +1,57 @@
+.breadcrumbs {
+  margin-top: 30px;
+
+  @include viewport--md {
+    margin-top: 18px;
+  }
+}
+
+.breadcrumbs__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  margin-right: 36px;
+  margin-bottom: 4px;
+
+  &:last-of-type {
+    margin-right: unset;
+  }
+
+  & a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.21;
+    letter-spacing: 0.7px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &:last-of-type a {
+    pointer-events: none;
+    cursor: text;
+    color: $color-dim-gray;
+  }
+
+  &::after {
+    content: "/";
+
+    position: absolute;
+    right: -22px;
+  }
+
+  &:last-of-type::after {
+    display: none;
+  }
+}

@@ -1,0 +1,38 @@
+// Colors
+//---------------------------------
+// https://www.htmlcsscolor.com/hex/334482
+// Default
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+$color-transparent: rgba(255, 255, 255, 0);
+// Base
+$color-white: #fefefe;
+$color-neon-blue: #1a36f9;
+$color-ghost-white: #f5f5f8;
+$color-black: #101010;
+$color-raven: #6f7681;
+$color-dim-gray: #717171;
+$color-turquoise: #4affdf;
+$color-bunker: #212429;
+$color-malachite: #25d366;
+$color-solitude: #e9ebef;
+$color-hawkes-blue: #d6dadf;
+$color-quartz: #e0e0e6;
+$color-suva-grey: #8f8f8f;
+$color-grey-nurse: #f82727; // Typography
+//---------------------------------
+$font-family--TTTravels: "TT Travels", "Arial", sans-serif; // Animation
+//---------------------------------
+$default-transition-settings: 0.5s ease;
+$modal-transition-settings: 0.6s cubic-bezier(0.55, 0, 0.1, 1); // Viewports
+//---------------------------------
+$viewport--xs: 320px;
+$viewport--sm: 375px;
+$viewport--md: 768px;
+$viewport--lg: 1024px;
+$viewport--xlg: 1200px;
+$viewport--xl: 1440px;
+$viewport--xxl: 1920px; // Retina
+//---------------------------------
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

@@ -1,0 +1,167 @@
+<section class="order-service">
+  <div class="container">
+    <div class="order-service__wrapper">
+      <h2 class="order-service__name title title--h2">Не знаете, с чего начать?</h2>
+      <p class="order-service__desc">Чтобы начать работу, достаточно ответить на несколько вопросов. <br> Мы узнаем о задаче чуть больше, а также сможем рассчитать стоимость и сроки вашего проекта.</p>
+    </div>
+
+    <form class="calculator" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="calculator__questions-wrapper">
+        <p class="calculator__name">Информация о проекте</p>
+        <ul class="calculator__questions-list">
+          <li class="calculator__questions-item calculator__questions-item--active" id="service-calc">
+            <button class="calculator__questions-btn" type="button">Нужная услуга:</button>
+            <div class="calculator__service-value">
+              -
+            </div>
+          </li>
+          <li class="calculator__questions-item" id="scope-calc">
+            <button class="calculator__questions-btn" type="button">Сфера деятельности</button>
+            <div class="calculator__scope-value">
+              -
+            </div>
+          </li>
+          <li class="calculator__questions-item" id="employees-calc">
+            <button class="calculator__questions-btn" type="button">Количество сотрудников:</button>
+            <div class="calculator__employees-value">
+              -
+            </div>
+          </li>
+          <li class="calculator__questions-item" id="feedback-calc">
+            <button class="calculator__questions-btn" type="button">Связь с нами</button>
+            <div class="calculator__feedback-value">
+              -
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="calculator__answers-wrapper">
+        <div class="calculator__answers-progress">
+          <div class="calculator__number-wrapper">
+            <input class="calculator__number-step" type="number" value="1" min="1">/4
+          </div>
+
+          <div class="calculator__bar-wrapper">
+            <div class="calculator__progress-bar">
+
+            </div>
+          </div>
+        </div>
+        <ul class="calculator__answers-list">
+          <li class="calculator__answers-item calculator__answers-item--active">
+            <div class="calculator__services-list tab-list">
+              <div class="tab-list__item tab-list__item--big">
+                <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="amocrm" id="check-amocrm">
+                <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-amocrm">AmoCRM</label>
+              </div>
+              <div class="tab-list__item tab-list__item--big">
+                <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="bitrix" id="check-bitrix">
+                <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-bitrix">Битрикс24</label>
+              </div>
+              <div class="tab-list__item tab-list__item--big">
+                <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="solutions" id="check-solutions">
+                <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-solutions">Отрасли решения</label>
+              </div>
+              <div class="tab-list__item tab-list__item--big">
+                <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="sensei" id="check-sensei">
+                <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-sensei">Sensei</label>
+              </div>
+              <div class="tab-list__item tab-list__item--big">
+                <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="telephone" id="check-telephone">
+                <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-telephone">IP Телефония</label>
+              </div>
+              <div class="tab-list__item tab-list__item--big">
+                <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="analytics" id="check-analytics">
+                <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-analytics">Аналитика</label>
+              </div>
+              <div class="tab-list__item tab-list__item--big">
+                <input class="calculator__checkbox-input visually-hidden" type="checkbox" name="marketing" id="check-marketing">
+                <label class="calculator__service-label tab-list__btn tab-list__btn--big btn btn--outline btn--large btn--white" for="check-marketing">Маркетинг</label>
+              </div>
+            </div>
+          </li>
+
+          <li class="calculator__answers-item">
+            <div class="calculator__answers-scope">
+              <!-- <label class="visually-hidden" for="field-scope">Введите сферу деятельности</label>
+              <input type="text" name="scope-company"  placeholder="Введите сферу деятельности"> -->
+              <label class="visually-hidden" for="field-scope">Количество комнат</label>
+              <select class="calculator__scope-select" name="scope-company" id="field-scope">
+                <option value="" hidden>Выберите сферу деятельности</option>
+                <option value="it">IT</option>
+                <option value="retail">Розничная торговля</option>
+                <option value="building">Строительство</option>
+                <option value="medicine">Медицина</option>
+                <option value="horeca">Horeca</option>
+                <option value="hotel">Гостиничный бизнес</option>
+                <option value="legal">Юридические услуги</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+          </li>
+
+          <li class="calculator__answers-item">
+            <div class="calculator__employees-wrapper">
+              <div class="calculator__employees-item calculator__employees-item--stepper stepper">
+                <button class="stepper__btn stepper__btn--minus" type="button"><span class="visually-hidden">Убавить</span></button>
+                <label class="visually-hidden" for="field-employees-stepper">Введите ваш вариант</label>
+                <input class="stepper__input" type="number" name="employees-stepper" id="field-employees-stepper" value="5" min="1">
+                <button class="stepper__btn stepper__btn--plus" type="button"><span class="visually-hidden">Прибавить</span></button>
+              </div>
+              <div class="calculator__employees-item calculator__employees-item--amount">
+                <label class="visually-hidden" for="field-employees">Введите ваш вариант</label>
+                <input type="text" name="employees" id="field-employees" placeholder="Ваш вариант">
+              </div>
+            </div>
+          </li>
+
+          <li class="calculator__answers-item">
+            <div class="calculator__form-feedback form-feedback">
+              <div class="calculator__feedback-wrapper calculator__feedback-wrapper--person">
+                <div class="form-feedback__input-wrapper form-feedback__input-wrapper--name">
+                  <input class="form-feedback__input form-feedback__input-name" type="text" name="name-calc" id="name-calculator" required>
+                  <label for="name-calculator">Введите имя*</label>
+                </div>
+                <div class="form-feedback__input-wrapper form-feedback__input-wrapper--tel">
+                  <input class="form-feedback__input form-feedback__input--tel input-tel" type="tel" name="tel-calc" id="tel-calculator" minlength="22" required>
+                  <label for="tel-calculator">Номер телефона*</label>
+                </div>
+              </div>
+              <div class="form-feedback__input-wrapper form-feedback__input-wrapper--email">
+                <div class="calculator__feedback-wrapper calculator__feedback-wrapper--email">
+                  <input class="form-feedback__input form-feedback__input--email" type="email" name="email-calc" id="email-calculator">
+                  <label for="email-calculator">Email</label>
+                </div>
+              </div>
+              <div class="form-feedback__input-wrapper">
+                <div class="calculator__feedback-wrapper">
+                  <textarea class="form-feedback__input form-feedback__input--comment" name="comment-calc" id="comment-calculator" rows="3"></textarea>
+                  <label for="comment-calculator">Комментарий</label>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="calculator__buttons">
+          <button class="calculator__btn calculator__btn--prev calculator__btn--inactive btn btn--big btn--black" type="button"><span class="calculator__btn-name">Предыдущий вопрос</span><span class="calculator__btn-name2">Назад</span></button>
+          <button class="calculator__btn calculator__btn--next calculator__btn--width calculator__btn--next-inactive btn btn--black btn--big" type="button"><span class="calculator__btn-name">Следующий шаг</span><span class="calculator__btn-name2">Продолжить</span></button>
+          <button class="calculator__btn calculator__btn--submit calculator__btn--inactive btn btn--blue btn--big" type="submit">Отправить</button>
+        </div>
+        <div class="calculator__message-wrapper">
+          <button class="calculator__message-btn" type="button" aria-label="Закрыть попап">
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+          <p class="calculator__message-thanks">
+            Спасибо! Начинаем формировать для вас ознакомительный документ.<br>
+            Скоро с вами свяжется наш менеджер.<br><br>
+            Благодарим за заявку!
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

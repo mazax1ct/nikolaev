@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    url("../fonts/tttravels-medium.woff2") format("woff2"),
+    url("../fonts/tttravels-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    url("../fonts/tttravels-demibold.woff2") format("woff2"),
+    url("../fonts/tttravels-demibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url("../fonts/tttravels-bold.woff2") format("woff2"),
+    url("../fonts/tttravels-bold.woff") format("woff");
+}
