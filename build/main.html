@@ -79,6 +79,9 @@
         <symbol id="icon-triangle-right" viewBox="0 0 7 7">
             <path d="M3.5 0L7 4H0z" transform="rotate(-90 301 344) rotate(180 322.5 24.25)" />
         </symbol>
+        <symbol id="icon-triangle-down" viewBox="0 0 7 7">
+            <path d="M3.5 0L7 4H0z" transform="translate(-638 -43) rotate(180 322.5 24.25)" />
+        </symbol>
     </svg>
 
     <div class="wrapper">
@@ -572,117 +575,274 @@
             
                     <div class="our-services__wrapper">
                         <div class="our-services__menu-block">
-                            <ul class="left-menu">
-                                <li class="left-menu__item left-menu__item--toggler"><button class="left-menu__button" type="button">Внедрение Битрикс24</button></li>
-                                <li class="left-menu__item"><button class="left-menu__button" type="button">Внедрение Битрикс24</button></li>
-                                <li class="left-menu__item"><button class="left-menu__button" type="button">Внедрение AmoCRM</button></li>
-                                <li class="left-menu__item"><button class="left-menu__button" type="button">Маркетинг</button></li>
-                                <li class="left-menu__item"><button class="left-menu__button" type="button">Аналитика</button></li>
-                                <li class="left-menu__item"><button class="left-menu__button" type="button">Отраслевые решения</button></li>
-                            </ul>
+                            <div class="left-menu">
+                                <button class="left-menu__button left-menu__button--toggler" type="button">Внедрение Битрикс24</button>
+                                <ul class="left-menu__list">
+                                    <li class="left-menu__item left-menu__item--hidden"><button class="left-menu__button is-active" type="button" data-tab="1">Внедрение Битрикс24</button></li>
+                                    <li class="left-menu__item"><button class="left-menu__button" type="button" data-tab="2">Внедрение AmoCRM</button></li>
+                                    <li class="left-menu__item"><button class="left-menu__button" type="button" data-tab="3">Маркетинг</button></li>
+                                    <li class="left-menu__item"><button class="left-menu__button" type="button" data-tab="4">Аналитика</button></li>
+                                    <li class="left-menu__item"><button class="left-menu__button" type="button" data-tab="5">Отраслевые решения</button></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="our-services__list-block">
-                            <ul class="services-cards">
-                                <li class="services-cards__item">
-                                    <div class="service-card">
-                                        <h3 class="service-card__title">Пакет<br> Быстрый старт</h3>
-                                        <div class="service-card__text">
-                                            <p>Когда небольшой компании необходимо в сжатые сроки повысить эффективность сотрудников и увеличить продажи.</p>
-                                            <p>Настроим Битрикс24 за 10 дней и 39900 руб</p>
-                                        </div>
-                                        <a class="service-card__link" href="#">
-                                            Подробнее
-                                            <span class="service-card__link-icon">
-                                                <svg>
-                                                    <use xlink:href="#icon-triangle-right"></use>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="services-cards__item">
-                                    <div class="service-card">
-                                        <h3 class="service-card__title">Настройка Битрикс24 и автоматизация продаж</h3>
-                                        <div class="service-card__text">
-                                            <p>Почувствуйте разницу с автоматизированными ключевыми бизнес-процессами и воронками продаж.</p>
-                                        </div>
-                                        <a class="service-card__link" href="#">
-                                            Подробнее
-                                            <span class="service-card__link-icon">
-                                                <svg>
-                                                    <use xlink:href="#icon-triangle-right"></use>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="services-cards__item">
-                                    <div class="service-card">
-                                        <h3 class="service-card__title">Интеграция Битрикс с телефонией</h3>
-                                        <div class="service-card__text">
-                                            <p>Повышайте эффективность персонала, дисциплинируйте. Обращайтесь к звонящему клиенту по имени — Битрикс24 помнит всё.</p>
-                                        </div>
-                                        <a class="service-card__link" href="#">
-                                            Подробнее
-                                            <span class="service-card__link-icon">
-                                                <svg>
-                                                    <use xlink:href="#icon-triangle-right"></use>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="services-cards__item">
-                                    <div class="service-card">
-                                        <h3 class="service-card__title">Интеграция Битрикс с сайтом или лендингом</h3>
-                                        <div class="service-card__text">
-                                            <p>Обрабатывайте заявки проще и быстрее. Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</p>
-                                        </div>
-                                        <a class="service-card__link" href="#">
-                                            Подробнее
-                                            <span class="service-card__link-icon">
-                                                <svg>
-                                                    <use xlink:href="#icon-triangle-right"></use>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="services-cards__item">
-                                    <div class="service-card">
-                                        <h3 class="service-card__title">Подключение средств коммуникаций</h3>
-                                        <div class="service-card__text">
-                                            <p>Важно не только быстро среагировать на запрос клиента, но и обеспечить ему полноценный сервис и персональный подход.</p>
-                                        </div>
-                                        <a class="service-card__link" href="#">
-                                            Подробнее
-                                            <span class="service-card__link-icon">
-                                                <svg>
-                                                    <use xlink:href="#icon-triangle-right"></use>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="services-cards__item">
-                                    <div class="service-card">
-                                        <h3 class="service-card__title">Интеграция Битрикс24 и 1С</h3>
-                                        <div class="service-card__text">
-                                            <p>Ускоряйте процессы и продавайте больше. Создавайте заказы покупателя прямо из CRM-системы.</p>
-                                        </div>
-                                        <a class="service-card__link" href="#">
-                                            Подробнее
-                                            <span class="service-card__link-icon">
-                                                <svg>
-                                                    <use xlink:href="#icon-triangle-right"></use>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="left-menu-tabs">
+                                <div class="left-menu-tab is-active" data-tab="1">
+                                    <ul class="services-cards">
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Пакет<br> Быстрый старт</h3>
+                                                <div class="service-card__text">
+                                                    <p>Когда небольшой компании необходимо в сжатые сроки повысить эффективность сотрудников и увеличить продажи.</p>
+                                                    <p>Настроим Битрикс24 за 10 дней и 39900 руб</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Настройка Битрикс24 и автоматизация продаж</h3>
+                                                <div class="service-card__text">
+                                                    <p>Почувствуйте разницу с автоматизированными ключевыми бизнес-процессами и воронками продаж.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Интеграция Битрикс с телефонией</h3>
+                                                <div class="service-card__text">
+                                                    <p>Повышайте эффективность персонала, дисциплинируйте. Обращайтесь к звонящему клиенту по имени — Битрикс24 помнит всё.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Интеграция Битрикс с сайтом или лендингом</h3>
+                                                <div class="service-card__text">
+                                                    <p>Обрабатывайте заявки проще и быстрее. Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Подключение средств коммуникаций</h3>
+                                                <div class="service-card__text">
+                                                    <p>Важно не только быстро среагировать на запрос клиента, но и обеспечить ему полноценный сервис и персональный подход.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Интеграция Битрикс24 и 1С</h3>
+                                                <div class="service-card__text">
+                                                    <p>Ускоряйте процессы и продавайте больше. Создавайте заказы покупателя прямо из CRM-системы.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="left-menu-tab" data-tab="2">
+                                    <ul class="services-cards">
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Подключение средств коммуникаций</h3>
+                                                <div class="service-card__text">
+                                                    <p>Важно не только быстро среагировать на запрос клиента, но и обеспечить ему полноценный сервис и персональный подход.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Интеграция Битрикс24 и 1С</h3>
+                                                <div class="service-card__text">
+                                                    <p>Ускоряйте процессы и продавайте больше. Создавайте заказы покупателя прямо из CRM-системы.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="left-menu-tab" data-tab="3">
+                                    <ul class="services-cards">
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Настройка Битрикс24 и автоматизация продаж</h3>
+                                                <div class="service-card__text">
+                                                    <p>Почувствуйте разницу с автоматизированными ключевыми бизнес-процессами и воронками продаж.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Интеграция Битрикс с телефонией</h3>
+                                                <div class="service-card__text">
+                                                    <p>Повышайте эффективность персонала, дисциплинируйте. Обращайтесь к звонящему клиенту по имени — Битрикс24 помнит всё.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Интеграция Битрикс с сайтом или лендингом</h3>
+                                                <div class="service-card__text">
+                                                    <p>Обрабатывайте заявки проще и быстрее. Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="left-menu-tab" data-tab="4">
+                                    <ul class="services-cards">
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Интеграция Битрикс с телефонией</h3>
+                                                <div class="service-card__text">
+                                                    <p>Повышайте эффективность персонала, дисциплинируйте. Обращайтесь к звонящему клиенту по имени — Битрикс24 помнит всё.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="left-menu-tab" data-tab="5">
+                                    <ul class="services-cards">
+                                        <li class="services-cards__item">
+                                            <div class="service-card">
+                                                <h3 class="service-card__title">Интеграция Битрикс с сайтом или лендингом</h3>
+                                                <div class="service-card__text">
+                                                    <p>Обрабатывайте заявки проще и быстрее. Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</p>
+                                                </div>
+                                                <a class="service-card__link" href="#">
+                                                    Подробнее
+                                                    <span class="service-card__link-icon">
+                                                        <svg>
+                                                            <use xlink:href="#icon-triangle-right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="form-block">
+                <div class="container">
+                    <h2 class="form-block__title title title--h2">Оставьте данные о вас,<br> мы свяжемся с вами!</h2>
+                    <form class="form-feedback">
+                        <div class="form-feedback__row">
+                            <div class="form-feedback__cell">
+                                <div class="form-feedback__input-wrapper">
+                                    <input class="form-feedback__input form-feedback__input--name" type="text" name="name" id="field-name" required="">
+                                    <label for="field-name">Ваше имя*</label>
+                                </div>
+                            </div>
+                            <div class="form-feedback__cell">
+                                <div class="form-feedback__input-wrapper">
+                                    <input class="form-feedback__input form-feedback__input--tel input-tel" type="tel" name="phone" id="field-tel" minlength="22" required="">
+                                    <label for="field-tel">Номер телефона*</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-feedback__button-block"><button class="btn btn--blue btn--small" type="submit">Написать нам</button></div>
+                    </form>
                 </div>
             </section>
 
@@ -854,23 +1014,387 @@
               </div>
             </section>
 
-            <section class="our-team">
-              <div class="our-team__wrapper container">
-                <div class="our-team__text-wrapper">
-                  <h2 class="title title--h2">Команда Nikolaev.group</h2>
-                  <p>В нашей компании работают специалисты с опытом построения комплексных систем продаж: аналитики, маркетологи, веб-разработчики и программисты, руководители проектов.<br><br> Каждый ценен тем, что, помимо высокой профессиональной квалификации, имеет опыт запуска и развития сильных ритейл-проектов.
-                  </p>
-                </div>
-                <div class="our-team__photo-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/team.webp 1x, img/content/team@2x.webp 2x">
-                    <source type="image/webp" srcset="img/content/team-375.webp 1x, img/content/team-375@2x.webp 2x">
+            <section class="cases">
+                <div class="container">
+                    <div class="title-content">
+                        <h2 class="title title--h2">Кейсы</h2>
+                        <p>Наилучшим образом нашу квалификацию подтверждают реализованные проекты. В каждом проекте любое совершаемое действие — измеримо и направлено на достижение конкретного результата.</p>
+                    </div>
             
-                    <source media="(min-width: 1024px)" srcset="img/content/team.jpg 1x, img/content/team@2x.jpg 2x">
-                    <img src="img/content/team-375.jpg" width="335" height="286" srcset="img/content/team-375@2x.jpg 2x" alt="Фото команды Nikolaev.group">
-                  </picture>
+                    <section class="tab-list">
+                        <div class="tab-list__dropdown tab-list__item">
+                            <button class="tab-list__dropdown-btn tab-list__btn tab-list__btn--active btn btn--no-uppercase btn--white">AMO CRM</button>
+                            <svg width="7" height="7">
+                                <use xlink:href="#icon-triangle-down"></use>
+                            </svg>
+                        </div>
+                        <div id="myDropdown" class="tab-list__buttons tab-list__buttons--tabs">
+                            <div class="tab-list__item tab-list__item--hide">
+                                <button class="tab-list__btn tab-list__btn--active btn btn--no-uppercase btn--white btn--no-pointer" type="button" data-value="tab-1">AMO CRM</button>
+                            </div>
+                            <div class="tab-list__item">
+                                <button class="tab-list__btn btn btn--no-uppercase btn--white" type="button" data-value="tab-2">Битрикс 24</button>
+                            </div>
+                            <div class="tab-list__item">
+                                <button class="tab-list__btn btn btn--no-uppercase btn--white" type="button" data-value="tab-3">Контекст</button>
+                            </div>
+                            <div class="tab-list__item">
+                                <button class="tab-list__btn btn btn--no-uppercase btn--white" type="button" data-value="tab-4">Таргет</button>
+                            </div>
+                            <div class="tab-list__item">
+                                <button class="tab-list__btn btn btn--no-uppercase btn--white" type="button" data-value="tab-5">SEO</button>
+                            </div>
+                            <div class="tab-list__item">
+                                <button class="tab-list__btn btn btn--no-uppercase btn--white" type="button" data-value="tab-6">SMM</button>
+                            </div>
+                        </div>
+            
+                        <ul class="our-services__desc-list tab-list__desc">
+                            <li class="tab-list__desc-item tab-list__desc-item--show" id="tab-1">
+                                <ul class="cases-list">
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tab-list__desc-item" id="tab-2">
+                                <ul class="cases-list">
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tab-list__desc-item" id="tab-3">
+                                <ul class="cases-list">
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tab-list__desc-item" id="tab-4">
+                                <ul class="cases-list">
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tab-list__desc-item" id="tab-5">
+                                <ul class="cases-list">
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tab-list__desc-item" id="tab-6">
+                                <ul class="cases-list">
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tab-list__desc-item" id="tab-7">
+                                <ul class="cases-list">
+                                    <li class="cases-list__item">
+                                        <a class="case-card" href="#">
+                                            <span class="case-card__image">
+                                                <img class="case-card__white" src="img/content/cases-list/img_white.png" srcset="img/content/cases-list/img_white@2x.png 2x" alt="">
+                                                <img class="case-card__color" src="img/content/cases-list/img_color.png" srcset="img/content/cases-list/img_color@2x.png 2x" alt="">
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+            
+                    <div class="cases__btn">
+                        <a href="#" class="btn btn--transparent btn--big">ПОКАЗАТЬ ЕЩЕ</a>
+                    </div>
                 </div>
-              </div>
+            </section>
+
+            <section class="bundles">
+                <div class="container">
+                    <h2 class="bundles__title title title--h2">Выберите свой пакет услуг</h2>
+            
+                    <ul class="bundles-list">
+                        <li class="bundles-list__item">
+                            <div class="bundle">
+                                <h3 class="bundle__title">Интеграция Битрикс с сайтом или лендингом</h3>
+                                <ul class="bundle__features">
+                                    <li class="available">Интеграция форм заявок на лендинге или сайте</li>
+                                    <li class="available">Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</li>
+                                    <li class="no-available">Обрабатывайте заявки проще и быстрее.</li>
+                                    <li class="no-available">Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</li>
+                                </ul>
+                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button">ОСТАВИТЬ ЗАЯВКУ</button></div>
+                            </div>
+                        </li>
+                        <li class="bundles-list__item">
+                            <div class="bundle">
+                                <h3 class="bundle__title">Пакет “Быстрый старт”</h3>
+                                <ul class="bundle__features">
+                                    <li class="available">Аудит и подготовка к запуску</li>
+                                    <li class="available">Настройка CRM</li>
+                                    <li class="available">Подключение источников трафика</li>
+                                    <li class="available">Обучение менеджеров</li>
+                                    <li class="available">Поддержка и корректировки работы менеджеров и системы</li>
+                                    <li>Вы получите комплексный инструктаж по работе с CRM и другие услуги всего за 39 999 руб.</li>
+                                </ul>
+                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button">ОСТАВИТЬ ЗАЯВКУ</button></div>
+                            </div>
+                        </li>
+                        <li class="bundles-list__item">
+                            <div class="bundle">
+                                <h3 class="bundle__title">Интеграция Битрикс с сайтом или лендингом</h3>
+                                <ul class="bundle__features">
+                                    <li class="available">Интеграция форм заявок на лендинге или сайте</li>
+                                    <li class="available">Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</li>
+                                    <li class="no-available">Обрабатывайте заявки проще и быстрее.</li>
+                                    <li class="no-available">Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</li>
+                                </ul>
+                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button">ОСТАВИТЬ ЗАЯВКУ</button></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="our-team">
+                <div class="our-team__wrapper container">
+                    <div class="our-team__text-wrapper">
+                        <h2 class="title title--h2">Команда Nikolaev.group</h2>
+                        <p>В нашей компании работают специалисты с опытом построения комплексных систем продаж: аналитики, маркетологи, веб-разработчики и программисты, руководители проектов.<br><br> Каждый ценен тем, что, помимо высокой профессиональной
+                            квалификации, имеет опыт запуска и развития сильных ритейл-проектов.
+                        </p>
+                    </div>
+                    <div class="our-team__photo-wrapper">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1024px)" srcset="img/content/team.webp 1x, img/content/team@2x.webp 2x">
+                            <source type="image/webp" srcset="img/content/team-375.webp 1x, img/content/team-375@2x.webp 2x">
+            
+                            <source media="(min-width: 1024px)" srcset="img/content/team.jpg 1x, img/content/team@2x.jpg 2x">
+                            <img src="img/content/team-375.jpg" width="335" height="286" srcset="img/content/team-375@2x.jpg 2x" alt="Фото команды Nikolaev.group">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certs">
+                <div class="container">
+                    <h2 class="certs__title title title--h2">Наши сертификаты</h2>
+                    <ul class="certs-list">
+                        <li class="certs-list__item">
+                            <a class="cert" href="#">
+                                <img src="img/content/cert.jpg" srcset="img/content/cert@2x.jpg 2x" alt="">
+                            </a>
+                        </li>
+                        <li class="certs-list__item">
+                            <a class="cert" href="#">
+                                <img src="img/content/cert.jpg" srcset="img/content/cert@2x.jpg 2x" alt="">
+                            </a>
+                        </li>
+                        <li class="certs-list__item">
+                            <a class="cert" href="#">
+                                <img src="img/content/cert.jpg" srcset="img/content/cert@2x.jpg 2x" alt="">
+                            </a>
+                        </li>
+                        <li class="certs-list__item">
+                            <a class="cert" href="#">
+                                <img src="img/content/cert.jpg" srcset="img/content/cert@2x.jpg 2x" alt="">
+                            </a>
+                        </li>
+                        <li class="certs-list__item">
+                            <a class="cert" href="#">
+                                <img src="img/content/cert.jpg" srcset="img/content/cert@2x.jpg 2x" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="quotes">
+                <div class="container">
+                    <div class="quotes-slider">
+                        <div class="swiper-container">
+                            <div class="js-quotes-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="quote">
+                                            <p class="quote__text">“Мы нашли отличный путь для достижения наших целей”</p>
+                                            <div class="person">
+                                                <div class="person__avatar"><img src="img/content/avatar.jpg" srcset="img/content/avatar@2x.jpg 2x" alt=""></div>
+                                                <div class="person__info">
+                                                    <p class="person__name">Александра Королькова</p>
+                                                    <p class="person__place">Генеральный директор ДвериШоп</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="quote">
+                                            <p class="quote__text">“Мы нашли отличный путь для достижения наших целей”</p>
+                                            <div class="person">
+                                                <div class="person__avatar"><img src="img/content/avatar.jpg" srcset="img/content/avatar@2x.jpg 2x" alt=""></div>
+                                                <div class="person__info">
+                                                    <p class="person__name">Александра Королькова</p>
+                                                    <p class="person__place">Генеральный директор ДвериШоп</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="quote">
+                                            <p class="quote__text">“Мы нашли отличный путь для достижения наших целей”</p>
+                                            <div class="person">
+                                                <div class="person__avatar"><img src="img/content/avatar.jpg" srcset="img/content/avatar@2x.jpg 2x" alt=""></div>
+                                                <div class="person__info">
+                                                    <p class="person__name">Александра Королькова</p>
+                                                    <p class="person__place">Генеральный директор ДвериШоп</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="our-blog">
@@ -982,6 +1506,29 @@
                   <a href="#" class="btn btn--transparent btn--big">Смотреть все статьи</a>
                 </div>
               </div>
+            </section>
+
+            <section class="form-block">
+                <div class="container">
+                    <h2 class="form-block__title title title--h2">Мы рассказали вам о себе, теперь вы можете<br> смело рассказать нам о вас и вашей компании!</h2>
+                    <form class="form-feedback">
+                        <div class="form-feedback__row">
+                            <div class="form-feedback__cell">
+                                <div class="form-feedback__input-wrapper">
+                                    <input class="form-feedback__input form-feedback__input--name" type="text" name="name" id="field-name" required="">
+                                    <label for="field-name">Ваше имя*</label>
+                                </div>
+                            </div>
+                            <div class="form-feedback__cell">
+                                <div class="form-feedback__input-wrapper">
+                                    <input class="form-feedback__input form-feedback__input--tel input-tel" type="tel" name="phone" id="field-tel" minlength="22" required="">
+                                    <label for="field-tel">Номер телефона*</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-feedback__button-block"><button class="btn btn--blue btn--small" type="submit">Написать нам</button></div>
+                    </form>
+                </div>
             </section>
         </main>
 
@@ -1118,11 +1665,20 @@
     </div>
 </body>
 
+<script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/left-menu.js"></script>
 <script src="js/calculator.js"></script>
+<script src="js/input-active.js"></script>
+<script src="js/tabs-services.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/quotes-slider.js"></script>
 <script>
     toggleMenu();
     calculator();
+    setInputActive();
+    switchTabsServices();
+    initQuotesSlider();
 </script>
 
 </html>

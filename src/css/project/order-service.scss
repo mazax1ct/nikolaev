@@ -1,31 +1,26 @@
 .order-service {
-  // min-height: 815px;
-  padding-top: 120px;
-  padding-bottom: 90px;
-  background-color: $color-default-white;
-
-  @include viewport--md {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+    padding-top: 120px;
+    padding-bottom: 90px;
+    background-color: $color-default-white;
+    @include viewport--md {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .order-service__wrapper {
-  max-width: 850px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-  text-align: center;
-
-  @include viewport--md {
-    margin-bottom: 40px;
-  }
+    max-width: 850px;
+    margin: 0 auto 60px;
+    text-align: center;
+    @include viewport--md {
+        margin-bottom: 40px;
+    }
 }
 
 .order-service__name {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .order-service__desc {
-  margin: 0 auto;
-  // text-align: center;
+    margin: 0 auto;
 }

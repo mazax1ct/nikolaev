@@ -1,0 +1,14 @@
+.form-block {
+    background-color: #fff;
+    min-height: 396px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+        @media(min-width: $viewport--xlg) {
+            margin-bottom: 48px;
+        }
+    }
+}

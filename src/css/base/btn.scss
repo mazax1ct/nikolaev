@@ -1,115 +1,110 @@
 .btn {
-  display: inline-block;
-  font-size: 15px;
-  line-height: 17px;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    transition: color 0.5s ease, background-color 0.5s ease;
-  }
-
-  &--white {
-    background-color: $color-default-white;
-  }
-
-  &--blue {
-    color: $color-default-white;
-    background-color: $color-neon-blue;
-
-    &:hover,
-    &:focus {
-      background-color: rgba($color-neon-blue, 0.5);
-    }
-
-    &:active {
-      background-color: rgba($color-neon-blue, 0.3);
-    }
-  }
-
-  &--black {
-    color: $color-default-white;
-    background-color: $color-default-black;
-
-    &:hover {
-      background-color: rgba($color-default-black, 0.5);
-    }
-
-    &:active {
-      background-color: rgba($color-default-black, 0.3);
-    }
-  }
-
-  &--transparent {
-    color: $color-default-black;
-    background-color: transparent;
-    border: 1px solid  $color-default-black;
-
-    &:hover,
-    &:focus {
-      color: $color-default-white;
-      background-color: $color-default-black;
-    }
-
-    &:active {
-      background-color: rgba($color-default-black, 0.5);
-      border-color: rgba($color-default-black, 0.3);
-    }
-  }
-
-  &--whatsapp {
-    &:hover,
-    &:focus {
-      color: $color-default-white;
-      background-color: $color-malachite;
-      border-color: $color-default-white;
-    }
-
-    &:active {
-      background-color: rgba($color-malachite, 0.3);
-    }
-  }
-
-  // &--large {
-  //   padding: 50px 45px;
-  // }
-
-  &--big {
-    padding: 18px 34px;
-
-    @include viewport--md {
-      padding-right: 38px;
-      padding-left: 38px;
-    }
-  }
-
-  &--small {
-    padding: 15px 31px;
-    font-size: 14px;
+    display: inline-block;
+    font-size: 15px;
     line-height: 17px;
-  }
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
 
-  &--no-uppercase {
-    text-transform: none;
-  }
+    &:focus,
+    &:hover {
+        transition: color 0.5s ease, background-color 0.5s ease;
+    }
 
-  &--no-pointer {
-    pointer-events: none;
-    cursor: default;
-  }
+    &--white {
+        background-color: $color-default-white;
+    }
 
-  &--outline {
-    border: 1px solid $color-solitude;
-  }
+    &--blue {
+        color: $color-default-white;
+        background-color: $color-neon-blue;
 
-  &--hide {
-    display: none;
-  }
+        &:focus,
+        &:hover {
+            background-color: rgba($color-neon-blue, 0.5);
+        }
+
+        &:active {
+            background-color: rgba($color-neon-blue, 0.3);
+        }
+    }
+
+    &--black {
+        color: $color-default-white;
+        background-color: $color-default-black;
+
+        &:hover {
+            background-color: rgba($color-default-black, 0.5);
+        }
+
+        &:active {
+            background-color: rgba($color-default-black, 0.3);
+        }
+    }
+
+    &--transparent {
+        color: $color-default-black;
+        background-color: transparent;
+        border: 1px solid $color-default-black;
+
+        &:focus,
+        &:hover {
+            color: $color-default-white;
+            background-color: $color-default-black;
+        }
+
+        &:active {
+            background-color: rgba($color-default-black, 0.5);
+            border-color: rgba($color-default-black, 0.3);
+        }
+    }
+
+    &--whatsapp {
+        &:focus,
+        &:hover {
+            color: $color-default-white;
+            background-color: $color-malachite;
+            border-color: $color-default-white;
+        }
+
+        &:active {
+            background-color: rgba($color-malachite, 0.3);
+        }
+    }
+
+    &--big {
+        padding: 18px 34px;
+        @include viewport--md {
+            padding-right: 38px;
+            padding-left: 38px;
+        }
+    }
+
+    &--small {
+        padding: 15px 31px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &--no-uppercase {
+        text-transform: none;
+    }
+
+    &--no-pointer {
+        pointer-events: none;
+        cursor: default;
+    }
+
+    &--outline {
+        border: 1px solid $color-solitude;
+    }
+
+    &--hide {
+        display: none;
+    }
 }

@@ -1,0 +1,18 @@
+.title-content {
+  max-width: 67%;
+  margin-bottom: 60px;
+  @include viewport--md {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  h1,
+  h2 {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  p {
+    margin: 0;
+  }
+}

@@ -12,12 +12,15 @@
     }
 
     &__text {
-        font-size: 28px;
+        font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         margin-top: 0;
         margin-bottom: 30px;
-        @media(min-width: $viewport--lg) {
+        @media(min-width: $viewport--xlg) {
+            font-size: 28px;
+        }
+        @media(min-width: $viewport--xl) {
             font-size: 40px;
             margin-bottom: 0;
         }

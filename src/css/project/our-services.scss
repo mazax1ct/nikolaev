@@ -15,13 +15,19 @@
     }
 
     &__wrapper {
-        @media(min-width: $viewport--xl) {
+        @media(min-width: $viewport--lg) {
             display: flex;
         }
     }
 
     &__menu-block {
-        @media(min-width: $viewport--xl) {
+        margin-bottom: 20px;
+        @media(min-width: $viewport--lg) {
+            margin-bottom: 0;
+            min-width: 200px;
+            width: 200px;
+        }
+        @media(min-width: $viewport--xlg) {
             min-width: 270px;
             width: 270px;
         }
@@ -29,11 +35,18 @@
 }
 
 .services-cards {
-    display: grid;
     list-style: none;
     margin: 0 0 -32px;
     padding: 0;
-    grid-template-columns: 1fr 1fr 1fr;
+    @media(min-width: $viewport--md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media(min-width: $viewport--lg) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     &__item {
         margin-bottom: 32px;
@@ -41,25 +54,25 @@
         padding-right: 12px;
 
         &:nth-child(2) {
-            @media(min-width: $viewport--xl) {
+            @media(min-width: $viewport--lg) {
                 margin-top: 40px !important;
             }
         }
 
         &:nth-child(3) {
-            @media(min-width: $viewport--xl) {
+            @media(min-width: $viewport--lg) {
                 margin-top: 80px;
             }
         }
 
         &:nth-child(3n+1) {
-            @media(min-width: $viewport--xl) {
+            @media(min-width: $viewport--lg) {
                 margin-top: -80px;
             }
         }
 
         &:nth-child(3n+2) {
-            @media(min-width: $viewport--xl) {
+            @media(min-width: $viewport--lg) {
                 margin-top: -40px;
             }
         }
@@ -76,8 +89,14 @@
     display: flex;
     flex-direction: column;
     max-width: 305px;
-    min-height: 420px;
+    min-height: 360px;
     padding: 48px 32px 54px;
+    @media(min-width: $viewport--lg) and (max-width: $viewport--xl - 1) {
+        padding: 30px 16px;
+    }
+    @media(min-width: $viewport--xl) {
+        min-height: 420px;
+    }
 
     &:hover {
         background: linear-gradient(179.02deg, #1A36F9 0.98%, #4AFFDF 130.58%);
@@ -104,6 +123,10 @@
         font-weight: 400;
         letter-spacing: 0.35px;
         line-height: 1.21428;
+
+        p {
+            margin-top: 0;
+        }
     }
 
     &__link {
