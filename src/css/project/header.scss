@@ -1,5 +1,7 @@
 .header {
     background-color: rgba($color-default-white, 0.9);
+    position: relative;
+    z-index: 1;
     @include viewport--md {
         position: relative;
     }
@@ -16,6 +18,9 @@
 .header__menu {
     display: flex;
     justify-content: space-between;
+    @media(min-width: $viewport--lg) {
+        min-height: 85px;
+    }
 }
 
 .header__wrapper {
@@ -92,7 +97,7 @@
         background-color: $color-default-white;
         border-top: 1px solid $color-solitude;
         z-index: 100;
-        // overflow-y: auto;
+
         &--show {
             display: block;
         }
@@ -138,10 +143,12 @@
         background-color: #25d366;
         color: #fff;
         font-size: 12px;
-        margin-left: 24px;
         padding-left: 20px;
         padding-right: 20px;
         text-transform: none;
+        @media(min-width: $viewport--lg) {
+            margin-left: 24px;
+        }
         @media(min-width: $viewport--xl) {
             font-size: 14px;
             padding-left: 31px;

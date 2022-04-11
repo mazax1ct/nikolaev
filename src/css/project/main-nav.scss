@@ -260,7 +260,7 @@
         &::after {
             position: absolute;
             content: "";
-            top: 47%;
+            top: 46%;
             right: 8px;
             border-right: 6px solid $color-default-black;
             border-top: 6px solid transparent;
@@ -268,9 +268,6 @@
             @include viewport--md {
                 top: 40%;
                 transform: rotate(-45deg);
-            }
-            @media (min-width: $viewport--xl) {
-                right: 11px;
             }
         }
         @media (min-width: $viewport--lg) {
@@ -313,7 +310,6 @@
     width: 50%;
     height: 100%;
     padding-top: 48px;
-    // padding-right: 300px;
     padding-left: 70px;
     @include viewport--xl {
         width: 48%;
@@ -323,10 +319,7 @@
         width: 40%;
         padding-top: 26px;
     }
-    // @include viewport--lg {
-    //   left: 215px;
-    //   width: 80%;
-    // }
+
     li {
         margin-bottom: 20px;
 

@@ -6,6 +6,17 @@
     clip: rect(0 0 0 0);
 }
 
+.page--slider {
+    .wrapper {
+        main {
+            margin-top: -70px;
+            @media(min-width: $viewport--lg) {
+                margin-top: -85px;
+            }
+        }
+    }
+}
+
 .wrapper {
     position: relative;
     display: flex;
