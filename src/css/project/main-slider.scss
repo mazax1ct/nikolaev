@@ -120,6 +120,90 @@
             }
         }
     }
+
+    &__svg {
+        display: none;
+        height: 531px;
+        left: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 321px;
+        z-index: 0;
+        @media(min-width: $viewport--lg) {
+            display: block;
+        }
+
+        svg {
+            position: absolute;
+            height: 531px;
+            width: 321px;
+        }
+
+        .st0 {
+            fill: #45EAE1;
+        }
+
+        .st1 {
+            fill: #38B5E8;
+        }
+
+        .st2 {
+            fill: #38B6E8;
+        }
+
+        .st3 {
+            fill: #339EEC;
+        }
+
+        .st4 {
+            fill: #3298ED;
+        }
+
+        .st5 {
+            fill: #3092EE;
+        }
+
+        .st6 {
+            fill: #2B7FEF;
+        }
+
+        .st7 {
+            fill: #2157F4;
+        }
+
+        .st8 {
+            fill: #2562F4;
+        }
+
+        .st9 {
+            fill: none;
+            stroke: #000;
+        }
+    }
+
+    &__mover {
+        background: linear-gradient(177.39deg, #4AFFDF -17.77%, #1A36F9 118.8%);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        mask: url("../img/bg/packman.svg");
+        position: absolute;
+        height: 88.1px !important;
+        width: 88.35px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        offset-path: path("M125.7,1.7c5.8,8.8,12.3,22,11,37.3c-0.7,24.8-32,48.3-32,48.3C51.3,125,25,182.8,16,208.3C-2.5,253.8,5.6,316,7.3,332.7c2.2,21.2,18.4,74.8,58.7,122C99.8,491,166.4,521,192.3,524c44.9,0,108.7,0,123.3,0");
+        offset-anchor: 50% 47%;
+        animation: move-along 20000ms linear;
+        will-change: auto;
+    }
+
+    circle {
+        &.hide {
+            display: none;
+        }
+    }
 }
 
 .slide {
@@ -189,94 +273,8 @@
         }
     }
 }
-
-.svg {
-    display: none;
-    height: 526px;
-    left: 50px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 484px;
-    z-index: 0;
-    @media(min-width: $viewport--lg) {
-        display: block;
-    }
-
-    svg {
-        position: absolute;
-        height: 526px;
-        width: 484px;
-    }
-}
-
-.mover {
-    background: linear-gradient(177.39deg, #4AFFDF -17.77%, #1A36F9 118.8%);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    mask: url("../img/bg/packman.svg");
-    position: absolute;
-    height: 88.1px !important;
-    width: 88.35px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    offset-path: path("M130.6,1c7.3,9.5,14.3,33.2,11.2,45.5c-5.8,22.5-20.4,30-29.6,39c-21,16-66.4,60.9-83.9,113.5C22,217.9,17,237.6,14.7,255.5c-3.9,30.6-0.4,56.1,0,64c0.5,9.9,7.6,41.6,20.4,73.5c15.5,29.5,29.1,53.5,45.6,71.5c34.9,38.1,107.2,60,107.2,60s207.6,1,292.4,0");
-    offset-anchor: 50% 47%;
-    animation: move-along 16000ms linear;
-    will-change: auto;
-}
 @keyframes move-along {
     100% {
         offset-distance: 100%;
     }
-}
-
-ellipse {
-    &.hide {
-        display: none;
-    }
-}
-
-.st0 {
-    fill: none;
-    //stroke: #000000;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-.st1 {
-    fill: #2157F4;
-}
-
-.st2 {
-    fill: #2562F4;
-}
-
-.st3 {
-    fill: #2B7FEF;
-}
-
-.st4 {
-    fill: #3092EE;
-}
-
-.st5 {
-    fill: #3298ED;
-}
-
-.st6 {
-    fill: #339EEC;
-}
-
-.st7 {
-    fill: #38B5E8;
-}
-
-.st8 {
-    fill: #38B6E8;
-}
-
-.st9 {
-    fill: #45EAE1;
 }

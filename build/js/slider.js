@@ -33,9 +33,9 @@ $( document ).ready(function() {
 
 
   if($('body').width() > 1023) {
-    var dotsLength = $('ellipse').length;
+    var dotsLength = $('circle').length;
 
-    var time = 16000;
+    var time = 20000;
 
     var period = time / dotsLength;
 
@@ -44,14 +44,18 @@ $( document ).ready(function() {
     let id = setInterval(function() {
       i++;
 
+      if (i == dotsLength-1) {
+        $('.main-slider__svg').hide();
+      }
+
       if (i == dotsLength) {
         clearInterval(id);
       } else {
-        $('ellipse').eq(0).addClass('hide');
-        $('ellipse').eq(i).addClass('hide');
+        $('circle').eq(0).addClass('hide');
+        $('circle').eq(i).addClass('hide');
 
-        if($('ellipse').eq(i).hasClass('change')) {
-          var that = $('ellipse').eq(i);
+        if($('circle').eq(i).hasClass('change')) {
+          var that = $('circle').eq(i);
 
           slider.slideTo(that.attr('id'));
         }
