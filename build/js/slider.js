@@ -44,11 +44,8 @@ $( document ).ready(function() {
     let id = setInterval(function() {
       i++;
 
-      if (i == dotsLength-1) {
-        $('.main-slider__svg').hide();
-      }
-
       if (i == dotsLength) {
+        $('.main-slider__svg').hide();
         clearInterval(id);
       } else {
         $('circle').eq(0).addClass('hide');
@@ -56,7 +53,9 @@ $( document ).ready(function() {
 
         if($('circle').eq(i).hasClass('change')) {
           var that = $('circle').eq(i);
-
+          if(that.attr('id') == 6) {
+            $('.main-slider__svg').hide();
+          }
           slider.slideTo(that.attr('id'));
         }
       }
