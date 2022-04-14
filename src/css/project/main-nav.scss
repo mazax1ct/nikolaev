@@ -281,6 +281,30 @@
     }
 }
 
+.main-nav__link-tag {
+    background: linear-gradient(95.43deg, #4AFFDF -6.6%, #1A36F9 147.97%);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    left: auto;
+    margin-top: -1px;
+    padding: 3px 8px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(150%, -50%);
+    text-transform: none;
+    z-index: 1;
+    @media(min-width: $viewport--lg) {
+        top: 10px;
+        margin-top: 0;
+        transform: none;
+        right: 6px;
+    }
+}
+
 .main-nav__second-link {
     display: block;
     @media (min-width: $viewport--lg) {
