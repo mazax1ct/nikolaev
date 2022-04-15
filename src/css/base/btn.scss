@@ -77,6 +77,24 @@
         }
     }
 
+    &--transparent_white {
+        color: $color-default-white;
+        background-color: transparent;
+        border: 1px solid $color-default-white;
+
+        &:focus,
+        &:hover {
+            color: $color-default-black;
+            background-color: $color-default-white;
+        }
+    }
+
+    &--light_blue {
+        background-color: #249BF1;
+        box-shadow: 0 0 8px 0 rgba(#249BF1, 0.5);
+        color: $color-default-white;
+    }
+
     &--big {
         padding: 18px 34px;
         @include viewport--md {

@@ -1,0 +1,98 @@
+.text-image {
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media(min-width: $viewport--lg) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    @media(min-width: $viewport--xl) {
+        margin-bottom: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        @include viewport--md {
+            position: relative;
+            flex-direction: column;
+            align-items: stretch;
+            padding-top: 60px;
+        }
+    }
+
+    &__text-wrapper {
+        @media(min-width: $viewport--lg) {
+            padding-right: 50px;
+            width: 50%;
+        }
+        @media(min-width: $viewport--xl) {
+            padding-right: 100px;
+        }
+        @include viewport--md {
+            order: 2;
+            max-width: 100%;
+            margin: 0;
+        }
+
+        h2 {
+            @media(min-width: $viewport--lg) {
+                margin-bottom: 16px;
+            }
+            @include viewport--md {
+                position: absolute;
+                top: 0;
+                left: 50px;
+                right: 0;
+                margin: 0 auto;
+            }
+            @include viewport--sm {
+                left: 20px;
+            }
+        }
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    &__position {
+        color: #249BF1;
+        font-weight: 700;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        @media(min-width: $viewport--xl) {
+            font-size: 18px;
+        }
+    }
+
+    &__btn {
+        margin-top: 24px;
+    }
+
+    &__photo-wrapper {
+        @media(min-width: $viewport--lg) {
+            width: 50%;
+        }
+        @include viewport--md {
+            order: 1;
+            padding-bottom: 30px;
+        }
+
+        img {
+            width: 100%;
+            height: 690px;
+            object-fit: cover;
+            @include viewport--lg {
+                height: 100%;
+            }
+            @media(min-width: $viewport--lg) {
+                margin-left: auto;
+                margin-right: auto;
+                width: auto;
+            }
+        }
+    }
+}

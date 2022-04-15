@@ -2,7 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     @media(min-width: $viewport--xl) {
-        padding-bottom: 115px;
+        padding-bottom: 70px;
     }
 
     &__title {
@@ -32,6 +32,7 @@
             width: 50%;
         }
         @media(min-width: $viewport--lg) {
+            margin-bottom: 0;
             width: 33.33333%;
         }
 
@@ -43,6 +44,17 @@
         &:nth-child(3) {
             @media(min-width: $viewport--lg) {
                 padding-top: 20px;
+            }
+        }
+    }
+
+    &--type_2 {
+        .bundles-list__item {
+            &:nth-child(1),
+            &:nth-child(3) {
+                @media(min-width: $viewport--lg) {
+                    padding-top: 64px;
+                }
             }
         }
     }
@@ -85,6 +97,36 @@
         .available {
             background-image: url("data:image/svg+xml,%3Csvg width='11' height='16' viewBox='0 0 11 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 9.01259L4 14.5126C5 9.84592 7.6 0.612587 10 1.01259' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
         }
+
+        .no-available {
+            color: $color-default-white;
+        }
+    }
+
+    &--type_2 {
+        @media(min-width: $viewport--md) {
+            min-height: 792px;
+        }
+        @media(min-width: $viewport--xl) {
+            padding-bottom: 25px;
+        }
+
+        .bundle__title {
+            @media(min-width: $viewport--xl) {
+                margin-bottom: 24px;
+            }
+        }
+
+        .bundle__features {
+            @media(min-width: $viewport--xl) {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        }
+
+        &:hover {
+            background: linear-gradient(178.2deg, #38B3E9 1.61%, #2258F5 98.57%);
+        }
     }
 
     &__title {
@@ -109,8 +151,8 @@
         padding-left: 14px;
         padding-right: 14px;
         @media(min-width: $viewport--xl) {
-            padding-left: 44px;
-            padding-right: 44px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
 
         li {
@@ -130,14 +172,25 @@
             }
 
             &.no-available {
+                color: $color-raven;
                 text-decoration: line-through;
             }
         }
     }
 
-    &__btn-block {
-        padding-top: 20px;
+    &__price {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.33333;
         margin-top: auto;
+        margin-bottom: 0;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    &__btn-block {
+        margin-top: auto;
+        padding-top: 20px;
         text-align: center;
 
         .btn {

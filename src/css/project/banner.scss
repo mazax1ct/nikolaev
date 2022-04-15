@@ -1,0 +1,58 @@
+.banner {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 100% 830px;
+    color: #fff;
+    padding-top: 135px;
+    text-align: center;
+
+    &__logo {
+        margin-top: 0;
+        margin-bottom: 40px;
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.35px;
+        margin-bottom: 16px;
+        margin-top: 0;
+        @media(min-width: $viewport--xl) {
+            font-size: 40px;
+        }
+
+        span {
+            color: #249BF1;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+
+    &__btn {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 8px;
+        min-width: 186px;
+        padding-left: 24px;
+        padding-right: 24px;
+        text-transform: none;
+    }
+
+    &__image {
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
