@@ -1,9 +1,10 @@
 .profits {
+    background-color: #fff;
     padding-top: 60px;
     padding-bottom: 60px;
     @media(min-width: $viewport--xl) {
         padding-top: 65px;
-        padding-bottom: 70px;
+        padding-bottom: 100px;
     }
 
     &__title {
@@ -16,35 +17,33 @@
 
     &__list {
         list-style: none;
-        margin: 0 0 -30px;
+        margin: 0 0 -32px;
         padding: 0;
         @media(min-width: $viewport--md) {
             display: flex;
             flex-wrap: wrap;
-            margin-left: -15px;
-            margin-right: -15px;
+            margin-left: -16px;
+            margin-right: -16px;
         }
     }
 
     &__list-item {
-        margin-bottom: 30px;
+        margin-bottom: 32px;
         @media(min-width: $viewport--md) {
             display: flex;
-            padding-left: 15px;
-            padding-right: 15px;
-            width: 50%;
-        }
-        @media(min-width: $viewport--lg) {
-            margin-bottom: 50px;
-            width: 33.33333%;
-        }
-        @media(min-width: $viewport--xl) {
-            margin-bottom: 60px;
+            padding-left: 16px;
+            padding-right: 16px;
         }
 
-        &:nth-child(3n - 1) {
-            @media(min-width: $viewport--lg) {
-                transform: translateY(30px);
+        &--type_1 {
+            @media(min-width: $viewport--md) {
+                width: 100%;
+            }
+        }
+
+        &--type_2 {
+            @media(min-width: $viewport--md) {
+                width: 50%;
             }
         }
     }
@@ -52,20 +51,91 @@
 
 .profit {
     border-radius: 5px;
-    background: linear-gradient(179.59deg, #1A36F9 -48.98%, #4AFFDF 190.89%);
-    box-shadow: 0 0 25px rgba(#000, 0.15);
-    color: #fff;
-    min-height: 356px;
-    max-width: 356px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 14px 28px;
+    padding: 16px;
     width: 100%;
+    @media(min-width: $viewport--lg) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 
-    &__icon {
-        height: 64px;
-        margin-bottom: 16px;
-        width: 64px;
+    &--type_1 {
+        background-color: #F5F5F8;
+        min-height: 270px;
+        @media(min-width: $viewport--lg) {
+            padding: 56px 64px;
+        }
+
+        .profit__text-block {
+            max-width: 770px;
+            @media(min-width: $viewport--lg) {
+                font-size: 18px;
+            }
+        }
+
+        .profit__title {
+            @media(min-width: $viewport--lg) {
+                font-size: 32px;
+                line-height: 1;
+                margin-bottom: 28px;
+            }
+        }
+
+        .profit__icon {
+            border-radius: 6px;
+            background-color: #8DC8F4;
+            height: 64px;
+            margin-bottom: 16px;
+            width: 64px;
+            @media(min-width: $viewport--lg) {
+                align-items: center;
+                display: flex;
+                height: 130px;
+                justify-content: center;
+                min-width: 130px;
+                margin-bottom: 0;
+                width: 130px;
+            }
+
+            img {
+                @media(min-width: $viewport--lg) {
+                    width: 74px;
+                }
+            }
+        }
+    }
+
+    &--type_2 {
+        background: linear-gradient(179.59deg, #1A36F9 -48.98%, #4AFFDF 190.89%);
+        box-shadow: 0 0 25px rgba(#000, 0.15);
+        color: #fff;
+        min-height: 220px;
+        @media(min-width: $viewport--lg) {
+            padding: 32px;
+        }
+
+        .profit__text-block {
+            max-width: 450px;
+        }
+
+        .profit__icon {
+            height: 64px;
+            margin-bottom: 16px;
+            width: 64px;
+            @media(min-width: $viewport--lg) {
+                align-items: center;
+                display: flex;
+                height: 104px;
+                justify-content: center;
+                margin-bottom: 0;
+                min-width: 104px;
+                width: 104px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
     }
 
     &__title {
