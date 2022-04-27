@@ -1,0 +1,39 @@
+<div class="modal modal--preload modal--order">
+    <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <form action="#" method="POST" id="form-order">
+                <h2 class="title">Заказать проект</h2>
+                <p>Мы уже реализовали более 400 проектов внедрения для компаний из самых разных сфер.<br><br> Оставьте свои данные и наш менеджер поможет выбрать удобное время для общения.</p>
+                <div class="form-feedback">
+                    <div class="form-feedback__input-wrapper">
+                        <input class="form-feedback__input form-feedback__input--name" type="text" name="name" id="field-name" required>
+                        <label for="field-name">Ваше имя*</label>
+                    </div>
+                    <div class="form-feedback__input-wrapper">
+                        <input class="form-feedback__input form-feedback__input--tel input-tel" type="tel" name="tel" id="field-tel" minlength="22" required>
+                        <label for="field-tel">Номер телефона*</label>
+                    </div>
+                    <div class="form-feedback__input-wrapper">
+                        <input class="form-feedback__input form-feedback__input--email" type="email" name="email" id="field-email">
+                        <label for="field-email">Email</label>
+                    </div>
+                </div>
+                <div class="form-feedback__massage form-feedback__massage--hide">
+                    <p class="form-feedback__massage-thanks">
+                        Спасибо! Начинаем формировать для вас ознакомительный документ.<br>
+                        Скоро с вами свяжется наш менеджер.<br><br>
+                        Благодарим за заявку!
+                    </p>
+                </div>
+                <button class="btn btn--blue btn--small" type="submit" id="submit-order">Отправить</button>
+                <p>Отправляя форму, вы даете свое согласие на условия <b>передачи информации</b>.</p>
+            </form>
+            <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+                <svg width="15" height="15">
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>

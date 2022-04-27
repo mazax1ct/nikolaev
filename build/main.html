@@ -82,6 +82,10 @@
         <symbol id="icon-triangle-down" viewBox="0 0 7 7">
             <path d="M3.5 0L7 4H0z" transform="translate(-638 -43) rotate(180 322.5 24.25)" />
         </symbol>
+        <symbol id="icon-close" viewBox="0 0 18 18">
+            <path fill="#777a81" d="M.255 1.5a.9.9 0 0 1 0-1.248A.9.9 0 0 1 1.5.253L9 7.758 16.5.253A.878.878 0 0 1 17.74 1.5l-7.494 7.494 7.493 7.5a.878.878 0 0 1-1.239 1.253L9 10.243l-7.5 7.504a.9.9 0 0 1-1.249 0 .9.9 0 0 1 0-1.248l7.493-7.5z"
+              transform="translate(-330 -1344) translate(329.998 1344)" />
+        </symbol>
     </svg>
 
     <div class="wrapper">
@@ -666,13 +670,13 @@
                                     <div class="slide">
                                         <div class="slide__image">
                                             <div class="slide__image-inner">
-                                                <button class="slide__btn btn btn--blue" type="button">Хочу так!</button>
+                                                <button class="slide__btn btn btn--blue" type="button" data-modal="order">Хочу так!</button>
                                             </div>
                                         </div>
             
                                         <div class="slide__title title title--h1">
                                             <div>Заказать<br> проект</div>
-                                            <button class="slide__btn btn btn--blue" type="button">Хочу так!</button>
+                                            <button class="slide__btn btn btn--blue" type="button" data-modal="order">Хочу так!</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1435,7 +1439,7 @@
                                     <li class="no-available">Обрабатывайте заявки проще и быстрее.</li>
                                     <li class="no-available">Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</li>
                                 </ul>
-                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button">ОСТАВИТЬ ЗАЯВКУ</button></div>
+                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button" data-modal="order">ОСТАВИТЬ ЗАЯВКУ</button></div>
                             </div>
                         </li>
                         <li class="bundles-list__item">
@@ -1449,7 +1453,7 @@
                                     <li class="available">Поддержка и корректировки работы менеджеров и системы</li>
                                     <li>Вы получите комплексный инструктаж по работе с CRM и другие услуги всего за 39 999 руб.</li>
                                 </ul>
-                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button">ОСТАВИТЬ ЗАЯВКУ</button></div>
+                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button" data-modal="order">ОСТАВИТЬ ЗАЯВКУ</button></div>
                             </div>
                         </li>
                         <li class="bundles-list__item">
@@ -1461,7 +1465,7 @@
                                     <li class="no-available">Обрабатывайте заявки проще и быстрее.</li>
                                     <li class="no-available">Любое взаимодействие с клиентом через сайт автоматически попадает в Битрикс24.</li>
                                 </ul>
-                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button">ОСТАВИТЬ ЗАЯВКУ</button></div>
+                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button" data-modal="order">ОСТАВИТЬ ЗАЯВКУ</button></div>
                             </div>
                         </li>
                     </ul>
@@ -1836,6 +1840,46 @@
                 </div>
             </div>
         </footer>
+
+        <div class="modal modal--preload modal--order">
+            <div class="modal__wrapper">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                    <form action="#" method="POST" id="form-order">
+                        <h2 class="title">Заказать проект</h2>
+                        <p>Мы уже реализовали более 400 проектов внедрения для компаний из самых разных сфер.<br><br> Оставьте свои данные и наш менеджер поможет выбрать удобное время для общения.</p>
+                        <div class="form-feedback">
+                            <div class="form-feedback__input-wrapper">
+                                <input class="form-feedback__input form-feedback__input--name" type="text" name="name" id="field-name" required>
+                                <label for="field-name">Ваше имя*</label>
+                            </div>
+                            <div class="form-feedback__input-wrapper">
+                                <input class="form-feedback__input form-feedback__input--tel input-tel" type="tel" name="tel" id="field-tel" minlength="22" required>
+                                <label for="field-tel">Номер телефона*</label>
+                            </div>
+                            <div class="form-feedback__input-wrapper">
+                                <input class="form-feedback__input form-feedback__input--email" type="email" name="email" id="field-email">
+                                <label for="field-email">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-feedback__massage form-feedback__massage--hide">
+                            <p class="form-feedback__massage-thanks">
+                                Спасибо! Начинаем формировать для вас ознакомительный документ.<br>
+                                Скоро с вами свяжется наш менеджер.<br><br>
+                                Благодарим за заявку!
+                            </p>
+                        </div>
+                        <button class="btn btn--blue btn--small" type="submit" id="submit-order">Отправить</button>
+                        <p>Отправляя форму, вы даете свое согласие на условия <b>передачи информации</b>.</p>
+                    </form>
+                    <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+                        <svg width="15" height="15">
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
@@ -1848,12 +1892,23 @@
 <script src="js/input-active.js"></script>
 <script src="js/tabs-services.js"></script>
 <script src="js/quotes-slider.js"></script>
+
+<script src="js/init-modals.js"></script>
+<script src="js/scroll-lock.js"></script>
+<script src="js/modal.js"></script>
 <script>
     toggleMenu();
     calculator();
     setInputActive();
     switchTabsServices();
     initQuotesSlider();
+
+    initModals();
+    disableScrolling();
+    enableScrolling();
+    setupModal();
+    openModal();
+    closeModal();
 </script>
 
 </html>

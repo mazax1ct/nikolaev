@@ -82,6 +82,10 @@
         <symbol id="icon-triangle-down" viewBox="0 0 7 7">
             <path d="M3.5 0L7 4H0z" transform="translate(-638 -43) rotate(180 322.5 24.25)" />
         </symbol>
+        <symbol id="icon-close" viewBox="0 0 18 18">
+            <path fill="#777a81" d="M.255 1.5a.9.9 0 0 1 0-1.248A.9.9 0 0 1 1.5.253L9 7.758 16.5.253A.878.878 0 0 1 17.74 1.5l-7.494 7.494 7.493 7.5a.878.878 0 0 1-1.239 1.253L9 10.243l-7.5 7.504a.9.9 0 0 1-1.249 0 .9.9 0 0 1 0-1.248l7.493-7.5z"
+              transform="translate(-330 -1344) translate(329.998 1344)" />
+        </symbol>
     </svg>
 
     <div class="wrapper">
@@ -534,7 +538,7 @@
                     <h1 class="banner__title">Настройка Битрикс24<br> за <span>24 990 руб</span> и 7 дней</h1>
                     <p class="banner__text">Через неделю Вы уже начнете работать с Битрикс-24</p>
                     <div class="banner__buttons">
-                        <button class="banner__btn btn btn--light_blue btn--big" type="button">Оставить заявку</button>
+                        <button class="banner__btn btn btn--light_blue btn--big" type="button" data-modal="order">Оставить заявку</button>
                         <a class="banner__btn btn btn--transparent_white btn--big" href="#">Подробнее</a>
                     </div>
                     <div class="banner__image">
@@ -605,7 +609,7 @@
                     <div class="form-banner__text-wrapper">
                         <h2 class="form-banner__title title title--h2">Заполните форму</h2>
                         <p class="form-banner__text">И получите коммерческое<br> предложение по <b>WhatsApp</b></p>
-                        <a class="form-banner__btn btn btn--light_blue btn--big" href="#">Оставить заявку</a>
+                        <button class="form-banner__btn btn btn--light_blue btn--big" type="button" data-modal="order">Оставить заявку</button>
                     </div>
                 </div>
             </section>
@@ -703,7 +707,7 @@
                                     <li class="no-available">Построение отчетов для руководителя</li>
                                 </ul>
                                 <p class="bundle__price">24 900 руб/ до 5<br> сотрудников</p>
-                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button">ОСТАВИТЬ ЗАЯВКУ</button></div>
+                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button" data-modal="order">ОСТАВИТЬ ЗАЯВКУ</button></div>
                             </div>
                         </li>
                         <li class="bundles-list__item">
@@ -723,7 +727,7 @@
                                     <li class="available">Документооборот</li>
                                 </ul>
                                 <p class="bundle__price">24 900 руб/ до 5<br> сотрудников</p>
-                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button">ОСТАВИТЬ ЗАЯВКУ</button></div>
+                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button" data-modal="order">ОСТАВИТЬ ЗАЯВКУ</button></div>
                             </div>
                         </li>
                         <li class="bundles-list__item">
@@ -742,7 +746,7 @@
                                     <li class="available">Построение отчетов для руководителя</li>
                                 </ul>
                                 <p class="bundle__price">24 900 руб/ до 5<br> сотрудников</p>
-                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button">ОСТАВИТЬ ЗАЯВКУ</button></div>
+                                <div class="bundle__btn-block"><button class="bundle__btn btn btn--transparent btn--small" type="button" data-modal="order">ОСТАВИТЬ ЗАЯВКУ</button></div>
                             </div>
                         </li>
                     </ul>
@@ -1073,6 +1077,46 @@
                 </div>
             </div>
         </footer>
+
+        <div class="modal modal--preload modal--order">
+            <div class="modal__wrapper">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                    <form action="#" method="POST" id="form-order">
+                        <h2 class="title">Заказать проект</h2>
+                        <p>Мы уже реализовали более 400 проектов внедрения для компаний из самых разных сфер.<br><br> Оставьте свои данные и наш менеджер поможет выбрать удобное время для общения.</p>
+                        <div class="form-feedback">
+                            <div class="form-feedback__input-wrapper">
+                                <input class="form-feedback__input form-feedback__input--name" type="text" name="name" id="field-name" required>
+                                <label for="field-name">Ваше имя*</label>
+                            </div>
+                            <div class="form-feedback__input-wrapper">
+                                <input class="form-feedback__input form-feedback__input--tel input-tel" type="tel" name="tel" id="field-tel" minlength="22" required>
+                                <label for="field-tel">Номер телефона*</label>
+                            </div>
+                            <div class="form-feedback__input-wrapper">
+                                <input class="form-feedback__input form-feedback__input--email" type="email" name="email" id="field-email">
+                                <label for="field-email">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-feedback__massage form-feedback__massage--hide">
+                            <p class="form-feedback__massage-thanks">
+                                Спасибо! Начинаем формировать для вас ознакомительный документ.<br>
+                                Скоро с вами свяжется наш менеджер.<br><br>
+                                Благодарим за заявку!
+                            </p>
+                        </div>
+                        <button class="btn btn--blue btn--small" type="submit" id="submit-order">Отправить</button>
+                        <p>Отправляя форму, вы даете свое согласие на условия <b>передачи информации</b>.</p>
+                    </form>
+                    <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+                        <svg width="15" height="15">
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
@@ -1084,12 +1128,23 @@
 <script src="js/input-active.js"></script>
 <script src="js/tabs-services.js"></script>
 <script src="js/quotes-slider.js"></script>
+
+<script src="js/init-modals.js"></script>
+<script src="js/scroll-lock.js"></script>
+<script src="js/modal.js"></script>
 <script>
     toggleMenu();
     calculator();
     setInputActive();
     switchTabsServices();
     initQuotesSlider();
+
+    initModals();
+    disableScrolling();
+    enableScrolling();
+    setupModal();
+    openModal();
+    closeModal();
 </script>
 
 </html>

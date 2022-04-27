@@ -52,6 +52,8 @@
         </main>
 
         //= template/footer.html
+
+        //= template/make-order-modal.html
     </div>
 </body>
 
@@ -64,12 +66,23 @@
 <script src="js/input-active.js"></script>
 <script src="js/tabs-services.js"></script>
 <script src="js/quotes-slider.js"></script>
+
+<script src="js/init-modals.js"></script>
+<script src="js/scroll-lock.js"></script>
+<script src="js/modal.js"></script>
 <script>
     toggleMenu();
     calculator();
     setInputActive();
     switchTabsServices();
     initQuotesSlider();
+
+    initModals();
+    disableScrolling();
+    enableScrolling();
+    setupModal();
+    openModal();
+    closeModal();
 </script>
 
 </html>
