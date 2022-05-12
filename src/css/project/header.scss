@@ -1,17 +1,24 @@
 .header {
     background-color: rgba($color-default-white, 0.9);
-    position: relative;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: background-color 0.3s;
     z-index: 2;
-    @include viewport--md {
+    /*@include viewport--md {
         position: relative;
-    }
-
+    }*/
     &--scroll {
         @include viewport--md {
             height: 100vh;
             overflow-x: hidden;
             overflow-y: scroll;
         }
+    }
+
+    &.scrolled {
+        background-color: #fff;
     }
 }
 
