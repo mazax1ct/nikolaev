@@ -87,6 +87,11 @@
             <path fill="#777a81" d="M.255 1.5a.9.9 0 0 1 0-1.248A.9.9 0 0 1 1.5.253L9 7.758 16.5.253A.878.878 0 0 1 17.74 1.5l-7.494 7.494 7.493 7.5a.878.878 0 0 1-1.239 1.253L9 10.243l-7.5 7.504a.9.9 0 0 1-1.249 0 .9.9 0 0 1 0-1.248l7.493-7.5z"
               transform="translate(-330 -1344) translate(329.998 1344)" />
         </symbol>
+        <symbol id="icon-refresh" viewBox="0 0 16 16">
+            <path
+              d="M8,14.8c-3.2,0-5.8-2.6-5.8-5.8c0-0.9,0.2-1.8,0.6-2.6C3.1,6,3.5,5.9,3.9,6c0.4,0.2,0.5,0.6,0.3,1C3.9,7.7,3.8,8.3,3.8,9c0,2.3,1.9,4.3,4.3,4.3c2.3,0,4.3-1.9,4.3-4.3c0-2.3-1.9-4.3-4.3-4.3H5.7C5.3,4.8,4.9,4.4,4.9,4s0.3-0.8,0.8-0.8H8c3.2,0,5.8,2.6,5.8,5.8C13.8,12.2,11.2,14.8,8,14.8z" />
+            <path d="M7.7,6.8c-0.2,0-0.4-0.1-0.5-0.2l-2-2c-0.3-0.3-0.3-0.8,0-1.1l2-2c0.3-0.3,0.8-0.3,1.1,0s0.3,0.8,0,1.1L6.7,4l1.5,1.5c0.3,0.3,0.3,0.8,0,1.1C8.1,6.7,7.9,6.8,7.7,6.8z" />
+        </symbol>
     </svg>
 
     <div class="wrapper">
@@ -673,6 +678,12 @@
                                             <div class="slide__image-inner">
                                                 <button class="slide__btn btn btn--blue" type="button" data-modal="order">Хочу так!</button>
                                             </div>
+                                            <button class="js-refresh-slider slide__slider-refresh slide__btn btn btn--blue" type="button">
+                                                <svg width="16" height="16">
+                                                    <use xlink:href="#icon-refresh"></use>
+                                                </svg>
+                                                Перезапустить
+                                            </button>
                                         </div>
             
                                         <div class="slide__title title title--h1">
@@ -702,6 +713,12 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="mobile-whatsapp">
+                <div class="container">
+                    <a class="btn btn--whatsapp btn--whatsapp_solid btn--small" href="https://wa.me/+79643240087/?text=Хочу%20обсудить%20внедрение%20CRM" target="_blank">Написать в Whatsapp</a>
                 </div>
             </section>
 

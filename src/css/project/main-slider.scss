@@ -84,6 +84,7 @@
         &.swiper-slide-active {
             opacity: 1 !important;
 
+            .slide__slider-refresh,
             .slide__title {
                 opacity: 1;
                 transform: translateY(0);
@@ -269,6 +270,8 @@
     }
 
     &__image {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 65px;
         padding-left: 10px;
         padding-right: 10px;
@@ -331,6 +334,24 @@
             height: 53px;
             max-width: 386px;
             text-transform: none;
+        }
+    }
+
+    &__slider-refresh {
+        display: none;
+        margin-top: auto;
+        opacity: 0;
+        transform: translateY(60px);
+        transition: transform 0.5s, opacity 0.5s;
+        @media(min-width: $viewport--lg) {
+            display: inline-flex;
+        }
+
+        svg {
+            fill: #fff;
+            height: 16px;
+            margin-right: 8px;
+            width: 16px;
         }
     }
 }

@@ -42,8 +42,12 @@
 }
 
 .header__logo {
+    margin-left: auto;
+    margin-right: auto;
     width: 90px;
     @media(min-width: $viewport--xl) {
+        margin-left: 0;
+        margin-right: 0;
         width: 140px;
     }
 

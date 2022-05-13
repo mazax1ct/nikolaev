@@ -1,0 +1,22 @@
+.mobile-whatsapp {
+    text-align: center;
+    @media(min-width: $viewport--lg) {
+        display: none;
+    }
+
+    .btn--whatsapp_solid {
+        background-color: #25d366;
+        color: #fff;
+        font-size: 14px;
+        text-transform: none;
+        padding-left: 31px;
+        padding-right: 31px;
+        width: 100%;
+        max-width: 248px;
+
+        &:focus,
+        &:hover {
+            background-color: rgba(37,211,102,.3);
+        }
+    }
+}
