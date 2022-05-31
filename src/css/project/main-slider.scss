@@ -324,6 +324,10 @@
         }
     }
 
+    &__buttons {
+        display: flex;
+    }
+
     &__btn {
         align-items: center;
         height: 48px;
@@ -340,18 +344,16 @@
     &__slider-refresh {
         display: none;
         margin-top: auto;
-        opacity: 0;
-        transform: translateY(60px);
-        transition: transform 0.5s, opacity 0.5s;
+        margin-left: 24px;
+        width: 80px;
         @media(min-width: $viewport--lg) {
             display: inline-flex;
         }
 
         svg {
             fill: #fff;
-            height: 16px;
-            margin-right: 8px;
-            width: 16px;
+            height: 24px;
+            width: 24px;
         }
     }
 }
